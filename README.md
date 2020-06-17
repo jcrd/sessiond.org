@@ -266,7 +266,8 @@ for descriptions of inhibitor-related methods.
 ## License
 
 sessiond is licensed under the GNU General Public License v3.0 or later
-(see [LICENSE](LICENSE)).
+(see [LICENSE][LICENSE]).
 
 [1]: https://mesonbuild.com
 [2]: https://www.freedesktop.org/software/systemd/man/systemd.special.html
+[LICENSE]: https://www.gnu.org/licenses/gpl-3.0.en.html
