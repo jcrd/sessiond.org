@@ -1,4 +1,4 @@
-# sessiond
+# sessiond - [v0.2.0](https://github.com/jcrd/sessiond/releases/tag/v0.2.0)
 
 sessiond is a standalone X session manager that reports the idle status of a
 graphical session to **systemd-logind**. It can be used alongside a window
