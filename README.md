@@ -67,7 +67,7 @@ is unset.
 
 The default configuration is included at `/usr/share/sessiond/sessiond.conf`.
 
-See [sessiond.conf(5)](man/sessiond.conf.5.pod) for descriptions of the options.
+See [sessiond.conf(5)](man/sessiond.conf.5.md) for descriptions of the options.
 
 ## systemd targets
 
@@ -90,14 +90,14 @@ Hook files with the `.hook` suffix are read from
 Hooks provide functionality similar to systemd targets but can also be triggered
 by a period of inactivity.
 
-See [sessiond-hooks(5)](man/sessiond-hooks.5.pod) for more information.
+See [sessiond-hooks(5)](man/sessiond-hooks.5.md) for more information.
 
 ## DBus service
 
 sessiond provides a DBus service on the session bus at the well-known name
 **_org.sessiond.session1_**.
 
-See the _DBus Service_ section of [sessiond(1)](man/sessiond.1.pod#dbus-service)
+See the _DBus Service_ section of [sessiond(1)](man/sessiond.1.md#dbus-service)
 for descriptions of methods, properties, and signals.
 
 For complete introspection data, use **gdbus**:
@@ -133,7 +133,7 @@ optional arguments:
   -h, --help            show this help message and exit
 ```
 
-See [sessionctl(1)](man/sessionctl.1.pod) for more information.
+See [sessionctl(1)](man/sessionctl.1.md) for more information.
 
 ## Managing the session
 
@@ -258,9 +258,9 @@ optional arguments:
   -y WHY, --why WHY  Set why this inhibitor is running
 ```
 
-See [sessiond-inhibit(1)](man/sessiond-inhibit.1.pod) for more information.
+See [sessiond-inhibit(1)](man/sessiond-inhibit.1.md) for more information.
 
-See the _DBus Service_ section of [sessiond(1)](man/sessiond.1.pod#dbus-service)
+See the _DBus Service_ section of [sessiond(1)](man/sessiond.1.md#dbus-service)
 for descriptions of inhibitor-related methods.
 
 ## License
