@@ -4,16 +4,17 @@
 
 1. [Overview](#overview)
 2. [Features](#features)
-3. [Building](#building)
+3. [Packages](#packages)
+4. [Building](#building)
     1. [Dependencies](#dependencies)
     2. [Testing](#testing)
     3. [Installing](#installing)
-4. [Configuration](#configuration)
+5. [Configuration](#configuration)
     1. [Hooks](#hooks)
-5. [DBus service](#dbus-service)
+6. [DBus service](#dbus-service)
     1. [sessionctl](#sessionctl)
-6. [systemd targets](#systemd-targets)
-7. [Managing the session](#managing-the-session)
+7. [systemd targets](#systemd-targets)
+8. [Managing the session](#managing-the-session)
     1. [Starting the session](#starting-the-session)
     2. [Running services](#running-services)
     3. [Locking the session](#locking-the-session)
@@ -35,6 +36,16 @@ manager or desktop environment that does not provide its own session management.
 * hooks triggered by inactivity or signals
 * a DBus service
 * (optional) management of DPMS settings
+
+## Packages
+
+* **RPM** package available from [copr][3]. [![Copr build status](https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/package/sessiond/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/package/sessiond/)
+
+  Install with:
+  ```
+  dnf copr enable jcrd/sessiond
+  dnf install sessiond
+  ```
 
 ## Building
 
@@ -292,4 +303,5 @@ sessiond is licensed under the GNU General Public License v3.0 or later
 
 [1]: https://mesonbuild.com
 [2]: https://www.freedesktop.org/software/systemd/man/systemd.special.html
+[3]: https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/
 [LICENSE]: https://www.gnu.org/licenses/gpl-3.0.en.html
