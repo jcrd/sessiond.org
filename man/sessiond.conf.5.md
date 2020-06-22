@@ -9,7 +9,7 @@ _HOME_/.config/sessiond/sessiond.conf
 
 # DESCRIPTION
 
-This file configures the X session manager **sessiond**(1). Its syntax is
+This file configures the X session manager [sessiond(1)](sessiond.1.md). Its syntax is
 toml v0.5.0. See: _https://github.com/toml-lang/toml/tree/v0.5.0_.
 
 # OPTIONS
@@ -34,7 +34,7 @@ toml v0.5.0. See: _https://github.com/toml-lang/toml/tree/v0.5.0_.
 
 - _OnSleep=_
 
-    If "true", lock the session when **systemd-logind**(8) sends the
+    If "true", lock the session when [systemd-logind(8)](https://www.commandlinux.com/man-page/man8/systemd-logind.8.html) sends the
     "PrepareForSleep" signal.
 
 - _StandbySec=_
@@ -96,8 +96,8 @@ Backlights are configured as an array of tables, using the section
 ## \[\[Hook\]\]
 
 Hooks are configured as an array of tables, using the section "\[\[Hook\]\]".
-See **sessiond-hooks**(5) for a description of options.
+See [sessiond-hooks(5)](sessiond-hooks.5.md) for a description of options.
 
 # SEE ALSO
 
-**sessiond**(1), **systemd-logind**(8), **sessiond-hooks**(5)
+[sessiond(1)](sessiond.1.md), [systemd-logind.service(8)](https://www.commandlinux.com/man-page/man8/systemd-logind.service.8.html), [sessiond-hooks(5)](sessiond-hooks.5.md)

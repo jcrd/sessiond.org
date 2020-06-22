@@ -15,10 +15,10 @@ sessiond-hooks - sessiond hook file format
 sessiond provides the ability to define hooks that are triggered by events.
 The "Inactive" event is unique to hooks. It allows commands to be run after a
 period of inactivity. It is more general than the "Idle" event, which occurs
-after _IdleSec_ (see **sessiond.conf**(5)) seconds of inactivity.
+after _IdleSec_ (see [sessiond.conf(5)](sessiond.conf.5.md)) seconds of inactivity.
 
 Hooks can be specified in the configuration file using the section "\[\[Hook\]\]".
-See **sessiond.conf**(5).
+See [sessiond.conf(5)](sessiond.conf.5.md).
 
 Hook files with the ".hook" suffix are read from
 _XDG\_CONFIG\_HOME_/sessiond/hooks.d or _HOME_/.config/sessiond/hooks.d.
@@ -45,4 +45,4 @@ _XDG\_CONFIG\_HOME_/sessiond/hooks.d or _HOME_/.config/sessiond/hooks.d.
 
 # SEE ALSO
 
-**sessiond**(1), **sessiond.conf**(5)
+[sessiond(1)](sessiond.1.md), [sessiond.conf(5)](sessiond.conf.5.md)

@@ -76,4 +76,4 @@ GNU General Public License v3.0 or later.
 
 # SEE ALSO
 
-**systemctl**(1), **gdbus**(1)
+[systemctl(1)](https://www.commandlinux.com/man-page/man1/systemctl.1.html), [gdbus(1)](https://www.commandlinux.com/man-page/man1/gdbus.1.html)

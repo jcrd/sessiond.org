@@ -41,4 +41,4 @@ GNU General Public License v3.0 or later.
 
 # SEE ALSO
 
-**sessiond**(1), **systemd-inhibit**(1)
+[sessiond(1)](sessiond.1.md), [systemd-inhibit(1)](https://www.commandlinux.com/man-page/man1/systemd-inhibit.1.html)

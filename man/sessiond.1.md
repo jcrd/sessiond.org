@@ -9,7 +9,7 @@ sessiond - standalone X session manager
 # DESCRIPTION
 
 sessiond is a standalone X session manager that reports the idle status of a
-session to **systemd-logind**(8) and handles its lock, unlock, sleep, and
+session to [systemd-logind.service(8)](https://www.commandlinux.com/man-page/man8/systemd-logind.service.8.html) and handles its lock, unlock, sleep, and
 shutdown signals. sessiond also provides hooks triggered by inactivity or a
 signal, automatic backlight dimming on idle, and optional management of DPMS
 settings.
@@ -22,7 +22,7 @@ settings.
 
 - **-c**, **--config**=_CONFIG_
 
-    Path to config file. See **sessiond.conf**(5) for configuration options.
+    Path to config file. See [sessiond.conf(5)](sessiond.conf.5.md) for configuration options.
 
 - **-i**, **--idle-sec**=_SEC_
 
@@ -134,9 +134,9 @@ methods, properties, and signals:
 
     Emitted when the session becomes inactive, with the **seconds** argument being
     the number of seconds since activity. Its value will be equal to either the
-    _IdleSec_ or _DimSec_ configuration option (see **sessiond.conf**(5)), or the
+    _IdleSec_ or _DimSec_ configuration option (see [sessiond.conf(5)](sessiond.conf.5.md)), or the
     _InactiveSec_ option of a hook with an **Inactive** trigger
-    (see **sessiond-hooks**(5)).
+    (see [sessiond-hooks(5)](sessiond-hooks.5.md)).
 
 - **PrepareForSleep** **state**
 
@@ -218,7 +218,7 @@ methods and properties:
 
 ## Introspection
 
-- For complete introspection data, use **gdbus**(1):
+- For complete introspection data, use [gdbus(1)](https://www.commandlinux.com/man-page/man1/gdbus.1.html):
 
     **gdbus** introspect --session --dest _org.sessiond.session1_ --object-path
     _/org/sessiond/session1_
@@ -243,4 +243,4 @@ GNU General Public License v3.0 or later.
 
 # SEE ALSO
 
-**sessiond.conf**(5), **sessiond-hooks**(5), **systemd-logind**(8), **gdbus**(1)
+[sessiond.conf(5)](sessiond.conf.5.md), [sessiond-hooks(5)](sessiond-hooks.5.md), [systemd-logind.service(8)](https://www.commandlinux.com/man-page/man8/systemd-logind.service.8.html), [gdbus(1)](https://www.commandlinux.com/man-page/man1/gdbus.1.html)
