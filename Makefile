@@ -6,4 +6,14 @@ all: $(MANPAGES:=.md)
 %.md: ../man/%.pod
 	pod2markdown --html-encode-chars '|' $< man/$@
 
-.PHONY: all
+gems:
+	bundle config path .gem
+	bundle install
+
+build:
+	bundle exec jekyll build
+
+serve: build
+	bundle exec jekyll serve
+
+.PHONY: all gems build serve
