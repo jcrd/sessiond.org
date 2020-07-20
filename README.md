@@ -16,7 +16,8 @@
     3. [Locking the session](#locking-the-session)
     4. [Stopping the session](#stopping-the-session)
     5. [Inhibiting inactivity](#inhibiting-inactivity)
-8. [Building](#building)
+8. [Python package](#python-package)
+9. [Building](#building)
     1. [Dependencies](#dependencies)
     2. [Testing](#testing)
     3. [Installing](#installing)
@@ -251,6 +252,13 @@ See [sessiond-inhibit(1)](man/sessiond-inhibit.1.md) for more information.
 
 See the _DBus Service_ section of [sessiond(1)](man/sessiond.1.md#dbus-service)
 for descriptions of inhibitor-related methods.
+
+## Python package
+
+A Python package is utilized by sessiond's command-line clients to interact with
+its DBus service.
+
+See the [API documentation](python/sessiond.md).
 
 ## Building
 
