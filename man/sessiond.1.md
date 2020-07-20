@@ -76,10 +76,16 @@ methods, properties, and signals:
 
         The unique ID of the inhibitor to stop.
 
+    Returns an error if the ID is not valid or does not exist.
+
+- **StopInhibitors**
+
+    Stop running inhibitors. Returns the number of inhibitors stopped.
+
 - **ListInhibitors**
 
-    List running inhibitors. Returns a list of tuples with the _who_ and _why_
-    strings.
+    List running inhibitors. Returns a dictionary mapping IDs to tuples of
+    _who_ and _why_ strings.
 
 ### PROPERTIES
 
@@ -174,6 +180,8 @@ methods and properties:
 
         An unsigned integer value.
 
+    Returns an error if unable to set brightness.
+
 - **IncBrightness**
 
     Increment the brightness of the backlight. Takes one argument:
@@ -182,7 +190,7 @@ methods and properties:
 
         An integer value added to the backlight's current brightness.
 
-    Returns the new brightness value.
+    Returns the new brightness value or an error if unable to set brightness.
 
 ### PROPERTIES
 

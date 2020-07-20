@@ -26,6 +26,10 @@ If no command is provided, it lists running inhibitors.
 
     Set why this inhibitor is running.
 
+- **-s**
+
+    Stop running inhibitors.
+
 # AUTHOR
 
 James Reed <jcrd@tuta.io>
