@@ -1,5 +1,5 @@
 ---
-date: '2020-07-20T18:43:40.649Z'
+date: '2020-09-03T21:31:47.889Z'
 docname: index
 images: {}
 path: /
@@ -131,13 +131,13 @@ Base interface to the sessiond DBus service.
 
 
 
-#### static convert(v)
+#### static convert(val)
 Convert a DBus-typed value to its python-type.
 
 
 * **Parameters**
 
-    **v** – Value to convert
+    **val** – Value to convert
 
 
 
@@ -253,7 +253,7 @@ List running inhibitors.
 
 * **Returns**
 
-    A dictionary mapping IDs to tuples of ‘who’ and ‘why’ strings
+    A dictionary mapping IDs to tuples of the creation timestamp         and ‘who’ and ‘why’ strings
 
 
 

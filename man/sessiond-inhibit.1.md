@@ -30,6 +30,14 @@ If no command is provided, it lists running inhibitors.
 
     Stop running inhibitors.
 
+- **-i**
+
+    Inhibit without a command.
+
+- **-u** \[_ID_\]
+
+    Uninhibit last inhibitor or by ID.
+
 # AUTHOR
 
 James Reed <jcrd@tuta.io>

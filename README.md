@@ -236,17 +236,21 @@ The `sessiond-inhibit` script provides a simple interface to acquire a lock
 before running a command and release it when the command returns.
 
 ```
-usage: sessiond-inhibit [-h] [-w WHO] [-y WHY] [command]
+usage: sessiond-inhibit [-h] [-w WHO] [-y WHY] [-s] [-i] [-u [ID]] [command]
 
 With no command, list running inhibitors.
 
 positional arguments:
-  command            Command to run
+  command               Command to run
 
 optional arguments:
-  -h, --help         show this help message and exit
-  -w WHO, --who WHO  Set who is inhibiting
-  -y WHY, --why WHY  Set why this inhibitor is running
+  -h, --help            show this help message and exit
+  -w WHO, --who WHO     Set who is inhibiting
+  -y WHY, --why WHY     Set why this inhibitor is running
+  -s, --stop            Stop running inhibitors
+  -i, --inhibit         Inhibit without a command
+  -u [ID], --uninhibit [ID]
+                        Uninhibit last inhibitor or by ID
 ```
 
 See [sessiond-inhibit(1)](man/sessiond-inhibit.1.md) for more information.

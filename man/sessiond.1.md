@@ -84,8 +84,8 @@ methods, properties, and signals:
 
 - **ListInhibitors**
 
-    List running inhibitors. Returns a dictionary mapping IDs to tuples of
-    _who_ and _why_ strings.
+    List running inhibitors. Returns a dictionary mapping IDs to tuples of the
+    creation timestamp and _who_ and _why_ strings.
 
 ### PROPERTIES
 
