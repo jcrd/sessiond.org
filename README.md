@@ -1,4 +1,4 @@
-# sessiond - [v0.3.0](https://github.com/jcrd/sessiond/releases/tag/v0.3.0)
+# sessiond - [v0.3.1](https://github.com/jcrd/sessiond/releases/tag/v0.3.1)
 
 ## Contents
 
