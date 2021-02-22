@@ -16,5 +16,5 @@ author = 'James Reed'
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx_jekyll_builder',
+    'sphinx_markdown_builder',
 ]

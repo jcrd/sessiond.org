@@ -1,0 +1,24 @@
+baseURL = "https://sessiond.org/"
+languageCode = "en-us"
+title = "sessiond"
+theme = "geekdoc"
+publishDir = "docs"
+
+pluralizeListTitles = false
+enableGitInfo = true
+
+# Geekdoc required configuration
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+disablePathToLower = true
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 4
+
+[params]
+geekdocLogo = "favicon/favicon.ico"
+geekdocMenuBundle = true
+geekdocNextPrev = false
+geekdocSearch = false
+geekdocBreadcrumb = false

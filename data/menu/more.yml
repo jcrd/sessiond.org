@@ -1,0 +1,11 @@
+---
+more:
+  - name: Releases
+    ref: "https://github.com/jcrd/sessiond/releases"
+    external: true
+    icon: "download"
+
+  - name: View Source
+    ref: "https://github.com/jcrd/sessiond"
+    external: true
+    icon: "github"

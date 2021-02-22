@@ -1,0 +1,53 @@
+---
+main:
+  - name: Packages
+    ref: "/packages.md"
+
+  - name: Configuration
+    ref: "/configuration.md"
+    sub:
+      - name: Hooks
+        ref: "/configuration.md#hooks"
+
+  - name: DBus service
+    ref: "/dbus-service.md"
+    sub:
+      - name: sessionctl
+        ref: "/dbus-service.md#sessionctl"
+
+  - name: systemd targets
+    ref: "/systemd-targets.md"
+
+  - name: Session management
+    ref: "/session-management.md"
+    sub:
+      - name: Starting the session
+        ref: "/session-management.md#starting-the-session"
+      - name: Running services
+        ref: "/session-management.md#running-services"
+      - name: Locking the session
+        ref: "/session-management.md#locking-the-session"
+      - name: Stopping the session
+        ref: "/session-management.md#stopping-the-session"
+      - name: Inhibiting inactivity
+        ref: "/session-management.md#inhibiting-inactivity"
+
+  - name: Python API
+    ref: "/python.md"
+
+  - name: Building
+    ref: "/building.md"
+
+  - name: Manpages
+    ref: "/man"
+    sub:
+      - name: sessionctl.1
+        ref: "/man/sessionctl.1.md"
+      - name: sessiond-inhibit.1
+        ref: "/man/sessiond-inhibit.1.md"
+      - name: sessiond.conf.5
+        ref: "/man/sessiond.conf.5.md"
+      - name: sessiond-hooks.5
+        ref: "/man/sessiond-hooks.5.md"
+      - name: sessiond.1
+        ref: "/man/sessiond.1.md"
