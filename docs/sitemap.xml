@@ -8,32 +8,17 @@
   </url>
   
   <url>
+    <loc>https://sessiond.org/categories/</loc>
+  </url>
+  
+  <url>
     <loc>https://sessiond.org/configuration/</loc>
-    <priority>0</priority>
+    <lastmod>2021-02-22T15:02:17-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://sessiond.org/dbus-service/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sessiond.org/packages/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sessiond.org/session-management/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sessiond.org/systemd-targets/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sessiond.org/categories/</loc>
+    <lastmod>2021-02-22T15:02:17-07:00</lastmod>
   </url>
   
   <url>
@@ -47,32 +32,47 @@
   </url>
   
   <url>
+    <loc>https://sessiond.org/packages/</loc>
+    <lastmod>2021-02-23T05:15:23-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sessiond.org/python/</loc>
     <lastmod>2021-02-22T15:02:17-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sessiond.org/man/sessionctl.1/</loc>
+    <loc>https://sessiond.org/session-management/</loc>
     <lastmod>2021-02-22T15:02:17-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sessiond.org/man/sessionctl.1/</loc>
+    <lastmod>2021-02-23T08:50:01-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://sessiond.org/man/sessiond-hooks.5/</loc>
-    <lastmod>2021-02-22T15:02:17-07:00</lastmod>
+    <lastmod>2021-02-23T08:50:01-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://sessiond.org/man/sessiond-inhibit.1/</loc>
-    <lastmod>2021-02-22T15:02:17-07:00</lastmod>
+    <lastmod>2021-02-23T08:50:01-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://sessiond.org/man/sessiond.1/</loc>
-    <lastmod>2021-02-22T15:02:17-07:00</lastmod>
+    <lastmod>2021-02-23T08:50:01-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://sessiond.org/man/sessiond.conf.5/</loc>
+    <lastmod>2021-02-23T08:50:01-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sessiond.org/systemd-targets/</loc>
     <lastmod>2021-02-22T15:02:17-07:00</lastmod>
   </url>
   

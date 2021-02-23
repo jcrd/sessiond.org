@@ -1,3 +1,7 @@
+---
+title: Session management
+---
+
 ## Starting the session
 
 A sessiond-based session should be started via a display manager, using

@@ -1,3 +1,7 @@
+---
+title: Configuration
+---
+
 sessiond looks for a configuration file at
 `$XDG_CONFIG_HOME/sessiond/sessiond.conf`
 or falls back to `$HOME/.config/sessiond/sessiond.conf` if `$XDG_CONFIG_HOME`

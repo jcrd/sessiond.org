@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://sessiond.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>Building</title>
       <link>https://sessiond.org/building/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -17,7 +17,7 @@ meson builddir &amp;amp;&amp;amp; cd builddir Inside the build directory, meson 
     </item>
     
     <item>
-      <title></title>
+      <title>Configuration</title>
       <link>https://sessiond.org/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -31,7 +31,7 @@ See sessiond-hooks(5) for more information.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>DBus service</title>
       <link>https://sessiond.org/dbus-service/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -44,7 +44,7 @@ usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version
     </item>
     
     <item>
-      <title></title>
+      <title>Packages</title>
       <link>https://sessiond.org/packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -54,7 +54,16 @@ dnf copr enable jcrd/sessiond dnf install sessiond   </description>
     </item>
     
     <item>
-      <title></title>
+      <title>Python API</title>
+      <link>https://sessiond.org/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sessiond.org/python/</guid>
+      <description>class sessiond.Backlight(name)  property brightness() property dev_path() inc_brightness(v) property max_brightness() property online() set_brightness(v) property subsystem() property sys_path()   class sessiond.DBusIFace(path, iface)  static convert(val) get_properties() get_property(name)   class sessiond.Session()  property backlights() property idle_hint() property idle_since_hint() property idle_since_hint_monotonic() inhibit(who=&#39;&#39;, why=&#39;&#39;) property inhibited_hint() list_inhibitors() lock() property locked_hint() stop_inhibitors() uninhibit(id) unlock() property version()       python-sessiond API     class sessiond.</description>
+    </item>
+    
+    <item>
+      <title>Session management</title>
       <link>https://sessiond.org/session-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -63,25 +72,6 @@ dnf copr enable jcrd/sessiond dnf install sessiond   </description>
 For example, configure lightdm to start a sessiond session by setting user-session=sessiond in /etc/lightdm/lightdm.conf.
 Running services     sessiond-session.target binds to graphical-session.target provided by systemd. See graphical-session.target in systemd.special(7) for more information about graphical sessions.
 To run a service in the graphical session, &amp;lt;service&amp;gt;.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sessiond.org/systemd-targets/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sessiond.org/systemd-targets/</guid>
-      <description>sessiond provides the following systemd targets:
-   Target Started when     graphical-lock.target session is locked   graphical-unlock.target session is unlocked   graphical-idle.target session becomes idle   graphical-unidle.target session resumes activity   user-sleep.target system sleeps   user-sleep-finished.target system resumes from sleeps   user-shutdown.target system shuts down    </description>
-    </item>
-    
-    <item>
-      <title>Python API</title>
-      <link>https://sessiond.org/python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sessiond.org/python/</guid>
-      <description>class sessiond.Backlight(name)  property brightness() property dev_path() inc_brightness(v) property max_brightness() property online() set_brightness(v) property subsystem() property sys_path()   class sessiond.DBusIFace(path, iface)  static convert(val) get_properties() get_property(name)   class sessiond.Session()  property backlights() property idle_hint() property idle_since_hint() property idle_since_hint_monotonic() inhibit(who=&#39;&#39;, why=&#39;&#39;) property inhibited_hint() list_inhibitors() lock() property locked_hint() stop_inhibitors() uninhibit(id) unlock() property version()       python-sessiond API     class sessiond.</description>
     </item>
     
     <item>
@@ -151,6 +141,16 @@ SYNOPSIS     XDG_CONFIG_HOME/sessiond/sessiond.conf or HOME/.config/sessiond/ses
 DESCRIPTION     This file configures the X session manager sessiond(1) . Its syntax is toml v0.5.0. See: https://github.com/toml-lang/toml/tree/v0.5.0.
 OPTIONS     [Idle]       Inputs=
 A list (of the format [&amp;ldquo;item&amp;rdquo;, &amp;ldquo;item&amp;rdquo;]) of input event types used to determine activity. Values are &amp;ldquo;motion&amp;rdquo;, &amp;ldquo;button-press&amp;rdquo;, &amp;ldquo;button-release&amp;rdquo;, &amp;ldquo;key-press&amp;rdquo;, &amp;ldquo;key-release&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>systemd targets</title>
+      <link>https://sessiond.org/systemd-targets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sessiond.org/systemd-targets/</guid>
+      <description>sessiond provides the following systemd targets:
+   Target Started when     graphical-lock.target session is locked   graphical-unlock.target session is unlocked   graphical-idle.target session becomes idle   graphical-unidle.target session resumes activity   user-sleep.target system sleeps   user-sleep-finished.target system resumes from sleeps   user-shutdown.target system shuts down    </description>
     </item>
     
   </channel>

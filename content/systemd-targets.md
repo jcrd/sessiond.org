@@ -1,3 +1,7 @@
+---
+title: systemd targets
+---
+
 sessiond provides the following systemd targets:
 
 Target                       | Started when

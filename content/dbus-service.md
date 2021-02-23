@@ -1,3 +1,7 @@
+---
+title: DBus service
+---
+
 sessiond provides a DBus service on the session bus at the well-known name
 **_org.sessiond.session1_**.
 
