@@ -1,5 +1,5 @@
 ---
-title: sessiond
+title: Overview
 ---
 
 sessiond is a standalone X session manager that reports the idle status of a
