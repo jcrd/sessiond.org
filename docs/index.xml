@@ -118,8 +118,8 @@ A list (of the format [&amp;ldquo;item&amp;rdquo;, &amp;ldquo;item&amp;rdquo;]) 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sessiond.org/packages/</guid>
-      <description> RPM package available from copr .    Install with:
-dnf copr enable jcrd/sessiond dnf install sessiond </description>
+      <description>  RPM package available from copr .  Install with:
+dnf copr enable jcrd/sessiond dnf install sessiond   </description>
     </item>
     
     <item>
