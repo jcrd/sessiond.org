@@ -1,3 +1,7 @@
+---
+title: sessiond-hooks.5
+---
+
 # NAME
 
 sessiond-hooks - sessiond hook file format

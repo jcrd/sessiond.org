@@ -1,3 +1,7 @@
+---
+title: sessiond.conf.5
+---
+
 # NAME
 
 sessiond.conf - sessiond configuration file format

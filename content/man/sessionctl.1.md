@@ -1,3 +1,7 @@
+---
+title: sessionctl.1
+---
+
 # NAME
 
 sessionctl - standalone X session manager client

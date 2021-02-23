@@ -1,3 +1,7 @@
+---
+title: sessiond-inhibit.1
+---
+
 # NAME
 
 sessiond-inhibit - manage sessiond inhibitors

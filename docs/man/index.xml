@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://sessiond.org/man/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>sessionctl.1</title>
       <link>https://sessiond.org/man/sessionctl.1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -26,7 +26,7 @@ Lock the session.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>sessiond-hooks.5</title>
       <link>https://sessiond.org/man/sessiond-hooks.5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -36,7 +36,7 @@ SYNOPSIS      [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&amp;
     </item>
     
     <item>
-      <title></title>
+      <title>sessiond-inhibit.1</title>
       <link>https://sessiond.org/man/sessiond-inhibit.1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -52,7 +52,7 @@ Set who is inhibiting.
     </item>
     
     <item>
-      <title></title>
+      <title>sessiond.1</title>
       <link>https://sessiond.org/man/sessiond.1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -63,7 +63,7 @@ DESCRIPTION     sessiond is a standalone X session manager that reports the idle
     </item>
     
     <item>
-      <title></title>
+      <title>sessiond.conf.5</title>
       <link>https://sessiond.org/man/sessiond.conf.5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

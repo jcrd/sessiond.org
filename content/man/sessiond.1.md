@@ -1,3 +1,7 @@
+---
+title: sessiond.1
+---
+
 # NAME
 
 sessiond - standalone X session manager

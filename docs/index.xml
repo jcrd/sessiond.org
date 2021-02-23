@@ -45,75 +45,6 @@ usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version
     
     <item>
       <title></title>
-      <link>https://sessiond.org/man/sessionctl.1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sessiond.org/man/sessionctl.1/</guid>
-      <description>NAME     sessionctl - standalone X session manager client
-SYNOPSIS     sessionctl [command]
-DESCRIPTION     sessionctl is responsible for running a sessiond session and interacting with its DBus service.
-COMMANDS       run
-Run a new session.
-  stop
-Stop the running session.
-  status
-Show session status.
-  lock
-Lock the session.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sessiond.org/man/sessiond-hooks.5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sessiond.org/man/sessiond-hooks.5/</guid>
-      <description>NAME     sessiond-hooks - sessiond hook file format
-SYNOPSIS      [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&amp;lt;seconds&amp;gt; (Inactive only) ExecStart=&amp;lt;command&amp;gt; ExecStop=&amp;lt;command&amp;gt; (Lock|Idle|Inactive only)  DESCRIPTION     sessiond provides the ability to define hooks that are triggered by events. The &amp;ldquo;Inactive&amp;rdquo; event is unique to hooks. It allows commands to be run after a period of inactivity. It is more general than the &amp;ldquo;Idle&amp;rdquo; event, which occurs after IdleSec (see sessiond.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sessiond.org/man/sessiond-inhibit.1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sessiond.org/man/sessiond-inhibit.1/</guid>
-      <description>NAME     sessiond-inhibit - manage sessiond inhibitors
-SYNOPSIS     sessiond-inhibit [options] [COMMAND]
-DESCRIPTION     sessiond-inhibit creates an inhibitor lock before running COMMAND and releases it when the command returns. If no command is provided, it lists running inhibitors.
-OPTIONS       -h
-Show help message.
-  -w WHO
-Set who is inhibiting.
-  -y WHY</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sessiond.org/man/sessiond.1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sessiond.org/man/sessiond.1/</guid>
-      <description>NAME     sessiond - standalone X session manager
-SYNOPSIS     sessiond [OPTIONS]
-DESCRIPTION     sessiond is a standalone X session manager that reports the idle status of a session to systemd-logind.service(8) and handles its lock, unlock, sleep, and shutdown signals. sessiond also provides hooks triggered by inactivity or a signal, automatic backlight dimming on idle, and optional management of DPMS settings.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://sessiond.org/man/sessiond.conf.5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sessiond.org/man/sessiond.conf.5/</guid>
-      <description>NAME     sessiond.conf - sessiond configuration file format
-SYNOPSIS     XDG_CONFIG_HOME/sessiond/sessiond.conf or HOME/.config/sessiond/sessiond.conf
-DESCRIPTION     This file configures the X session manager sessiond(1) . Its syntax is toml v0.5.0. See: https://github.com/toml-lang/toml/tree/v0.5.0.
-OPTIONS     [Idle]       Inputs=
-A list (of the format [&amp;ldquo;item&amp;rdquo;, &amp;ldquo;item&amp;rdquo;]) of input event types used to determine activity. Values are &amp;ldquo;motion&amp;rdquo;, &amp;ldquo;button-press&amp;rdquo;, &amp;ldquo;button-release&amp;rdquo;, &amp;ldquo;key-press&amp;rdquo;, &amp;ldquo;key-release&amp;rdquo;.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://sessiond.org/packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -151,6 +82,75 @@ To run a service in the graphical session, &amp;lt;service&amp;gt;.</description
       
       <guid>https://sessiond.org/python/</guid>
       <description>class sessiond.Backlight(name)  property brightness() property dev_path() inc_brightness(v) property max_brightness() property online() set_brightness(v) property subsystem() property sys_path()   class sessiond.DBusIFace(path, iface)  static convert(val) get_properties() get_property(name)   class sessiond.Session()  property backlights() property idle_hint() property idle_since_hint() property idle_since_hint_monotonic() inhibit(who=&#39;&#39;, why=&#39;&#39;) property inhibited_hint() list_inhibitors() lock() property locked_hint() stop_inhibitors() uninhibit(id) unlock() property version()       python-sessiond API     class sessiond.</description>
+    </item>
+    
+    <item>
+      <title>sessionctl.1</title>
+      <link>https://sessiond.org/man/sessionctl.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sessiond.org/man/sessionctl.1/</guid>
+      <description>NAME     sessionctl - standalone X session manager client
+SYNOPSIS     sessionctl [command]
+DESCRIPTION     sessionctl is responsible for running a sessiond session and interacting with its DBus service.
+COMMANDS       run
+Run a new session.
+  stop
+Stop the running session.
+  status
+Show session status.
+  lock
+Lock the session.</description>
+    </item>
+    
+    <item>
+      <title>sessiond-hooks.5</title>
+      <link>https://sessiond.org/man/sessiond-hooks.5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sessiond.org/man/sessiond-hooks.5/</guid>
+      <description>NAME     sessiond-hooks - sessiond hook file format
+SYNOPSIS      [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&amp;lt;seconds&amp;gt; (Inactive only) ExecStart=&amp;lt;command&amp;gt; ExecStop=&amp;lt;command&amp;gt; (Lock|Idle|Inactive only)  DESCRIPTION     sessiond provides the ability to define hooks that are triggered by events. The &amp;ldquo;Inactive&amp;rdquo; event is unique to hooks. It allows commands to be run after a period of inactivity. It is more general than the &amp;ldquo;Idle&amp;rdquo; event, which occurs after IdleSec (see sessiond.</description>
+    </item>
+    
+    <item>
+      <title>sessiond-inhibit.1</title>
+      <link>https://sessiond.org/man/sessiond-inhibit.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sessiond.org/man/sessiond-inhibit.1/</guid>
+      <description>NAME     sessiond-inhibit - manage sessiond inhibitors
+SYNOPSIS     sessiond-inhibit [options] [COMMAND]
+DESCRIPTION     sessiond-inhibit creates an inhibitor lock before running COMMAND and releases it when the command returns. If no command is provided, it lists running inhibitors.
+OPTIONS       -h
+Show help message.
+  -w WHO
+Set who is inhibiting.
+  -y WHY</description>
+    </item>
+    
+    <item>
+      <title>sessiond.1</title>
+      <link>https://sessiond.org/man/sessiond.1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sessiond.org/man/sessiond.1/</guid>
+      <description>NAME     sessiond - standalone X session manager
+SYNOPSIS     sessiond [OPTIONS]
+DESCRIPTION     sessiond is a standalone X session manager that reports the idle status of a session to systemd-logind.service(8) and handles its lock, unlock, sleep, and shutdown signals. sessiond also provides hooks triggered by inactivity or a signal, automatic backlight dimming on idle, and optional management of DPMS settings.</description>
+    </item>
+    
+    <item>
+      <title>sessiond.conf.5</title>
+      <link>https://sessiond.org/man/sessiond.conf.5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sessiond.org/man/sessiond.conf.5/</guid>
+      <description>NAME     sessiond.conf - sessiond configuration file format
+SYNOPSIS     XDG_CONFIG_HOME/sessiond/sessiond.conf or HOME/.config/sessiond/sessiond.conf
+DESCRIPTION     This file configures the X session manager sessiond(1) . Its syntax is toml v0.5.0. See: https://github.com/toml-lang/toml/tree/v0.5.0.
+OPTIONS     [Idle]       Inputs=
+A list (of the format [&amp;ldquo;item&amp;rdquo;, &amp;ldquo;item&amp;rdquo;]) of input event types used to determine activity. Values are &amp;ldquo;motion&amp;rdquo;, &amp;ldquo;button-press&amp;rdquo;, &amp;ldquo;button-release&amp;rdquo;, &amp;ldquo;key-press&amp;rdquo;, &amp;ldquo;key-release&amp;rdquo;.</description>
     </item>
     
   </channel>

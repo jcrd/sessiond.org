@@ -12,8 +12,9 @@ SPHINX_FILES = sphinx/conf.py \
 all: $(MANPAGES:=.md) content/python.md
 
 $(MANDIR)/%.md: ../man/%.pod
+	echo -e '---\ntitle: $*\n---\n' > $@
 	pod2markdown --html-encode-chars '|' $< | \
-		./scripts/link_manpages.pl $(MANDIR) $(MANPAGES) > $@
+		./scripts/link_manpages.pl $(MANDIR) $(MANPAGES) >> $@
 
 content/python.md: $(SPHINX_FILES)
 	sphinx-build -M markdown sphinx _sphinx
