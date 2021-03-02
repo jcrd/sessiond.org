@@ -17,9 +17,10 @@ its DBus service.
 
 # COMMANDS
 
-- **run**
+- **run** \[_UNIT_\]
 
-    Run a new session.
+    Run a new session, with _UNIT_ as the main unit if provided.
+    The default unit is _sessiond-session.target_.
 
 - **stop**
 
