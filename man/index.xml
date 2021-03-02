@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Manpages on sessiond</title><link>https://sessiond.org/man/</link><description>Recent content in Manpages on sessiond</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://sessiond.org/man/index.xml" rel="self" type="application/rss+xml"/><item><title>sessionctl.1</title><link>https://sessiond.org/man/sessionctl.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sessiond.org/man/sessionctl.1/</guid><description>NAME sessionctl - standalone X session manager client
 SYNOPSIS sessionctl [command]
 DESCRIPTION sessionctl is responsible for running a sessiond session and interacting with its DBus service.
-COMMANDS run
-Run a new session.
+COMMANDS run [UNIT]
+Run a new session, with UNIT as the main unit if provided. The default unit is sessiond-session.target.
 stop
-Stop the running session.
-status
-Show session status.
-lock
-Lock the session.</description></item><item><title>sessiond-hooks.5</title><link>https://sessiond.org/man/sessiond-hooks.5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sessiond.org/man/sessiond-hooks.5/</guid><description>NAME sessiond-hooks - sessiond hook file format
+Stop the running session.</description></item><item><title>sessiond-hooks.5</title><link>https://sessiond.org/man/sessiond-hooks.5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sessiond.org/man/sessiond-hooks.5/</guid><description>NAME sessiond-hooks - sessiond hook file format
 SYNOPSIS [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&amp;lt;seconds&amp;gt; (Inactive only) ExecStart=&amp;lt;command&amp;gt; ExecStop=&amp;lt;command&amp;gt; (Lock|Idle|Inactive only) DESCRIPTION sessiond provides the ability to define hooks that are triggered by events. The &amp;ldquo;Inactive&amp;rdquo; event is unique to hooks. It allows commands to be run after a period of inactivity. It is more general than the &amp;ldquo;Idle&amp;rdquo; event, which occurs after IdleSec (see sessiond.</description></item><item><title>sessiond-inhibit.1</title><link>https://sessiond.org/man/sessiond-inhibit.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sessiond.org/man/sessiond-inhibit.1/</guid><description>NAME sessiond-inhibit - manage sessiond inhibitors
 SYNOPSIS sessiond-inhibit [options] [COMMAND]
 DESCRIPTION sessiond-inhibit creates an inhibitor lock before running COMMAND and releases it when the command returns. If no command is provided, it lists running inhibitors.
