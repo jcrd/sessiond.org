@@ -29,6 +29,8 @@ main:
         ref: "/session-management.md#locking-the-session"
       - name: Stopping the session
         ref: "/session-management.md#stopping-the-session"
+      - name: Running a window manager
+        ref: "/session-management.md#running-a-window-manager"
       - name: Inhibiting inactivity
         ref: "/session-management.md#inhibiting-inactivity"
 

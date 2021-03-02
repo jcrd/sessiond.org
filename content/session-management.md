@@ -104,6 +104,38 @@ ExecStopPost=/usr/bin/sessionctl stop
 WantedBy=graphical-session.target
 ```
 
+## Running a window manager
+
+To use sessiond alongside a window manager, the session can be started with:
+`sessionctl run window-manager.service`
+
+An example `window-manager.service`:
+```
+[Unit]
+Description=Window manager
+Requires=sessiond-session.target
+After=sessiond.service
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/twm
+ExecStopPost=/usr/bin/sessionctl stop
+Restart=always
+
+[Install]
+WantedBy=graphical-session.target
+```
+
+A custom Desktop Entry can be used to run the window manager and session:
+```
+[Desktop Entry]
+Name=twm
+Comment=Window manager
+TryExec=twm
+Exec=sessionctl run window-manager.service
+Type=Application
+```
+
 ## Inhibiting inactivity
 
 Inhibitor locks can be acquired when the session should be considered active
