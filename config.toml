@@ -2,7 +2,6 @@ baseURL = "https://sessiond.org/"
 languageCode = "en-us"
 title = "sessiond"
 theme = "geekdoc"
-publishDir = "docs"
 
 pluralizeListTitles = false
 enableGitInfo = true
