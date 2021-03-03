@@ -23,7 +23,7 @@ content/python.md: $(SPHINX_FILES)
 	rm -rf _sphinx
 
 build:
-	hugo
+	hugo --minify
 
 serve:
 	hugo serve
