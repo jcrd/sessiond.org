@@ -21,3 +21,6 @@ geekdocMenuBundle = true
 geekdocNextPrev = false
 geekdocSearch = false
 geekdocBreadcrumb = false
+
+[minify]
+disableHTML = true
