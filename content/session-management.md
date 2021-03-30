@@ -5,10 +5,13 @@ title: Session management
 ## Starting the session
 
 A sessiond-based session should be started via a display manager, using
-the provided `sessiond.desktop` X session file.
+the provided `sessiond.desktop` Desktop Entry file.
 
 For example, configure `lightdm` to start a sessiond session by setting
 `user-session=sessiond` in `/etc/lightdm/lightdm.conf`.
+
+Alternatively, a window manager can be run directly via a custom Desktop Entry
+file. See [Running a window manager](#running-a-window-manager).
 
 ## Running services
 
@@ -67,6 +70,8 @@ ExecStopPost=/usr/bin/sessionctl stop
 WantedBy=graphical-session.target
 ```
 
+However, this is not necessary when running a window manager as described below.
+
 ## Running a window manager
 
 To use sessiond alongside a window manager, the session can be started with:
@@ -82,11 +87,7 @@ PartOf=graphical-session.target
 
 [Service]
 ExecStart=/usr/bin/twm
-ExecStopPost=/usr/bin/sessionctl stop
 Restart=always
-
-[Install]
-WantedBy=graphical-session.target
 ```
 
 A custom Desktop Entry can be used to run the window manager and session:
@@ -98,6 +99,9 @@ TryExec=twm
 Exec=sessionctl run window-manager.service
 Type=Application
 ```
+
+This entry can be selected via the display manager or set as the default in its
+configuration file.
 
 ## Locking the session
 
