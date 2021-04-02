@@ -3,9 +3,9 @@ more:
   - name: Releases
     ref: "https://github.com/jcrd/sessiond/releases"
     external: true
-    icon: "download"
+    icon: "gdoc_download"
 
   - name: View Source
     ref: "https://github.com/jcrd/sessiond"
     external: true
-    icon: "github"
+    icon: "gdoc_github"
