@@ -162,6 +162,11 @@ template {
 .flex-wrap {
   flex-wrap: wrap
 }
+.flex-grid {
+  flex-direction: column;
+  border: 1px solid #e9ecef;
+  border-radius: .15rem
+}
 .justify-start {
   justify-content: flex-start
 }
@@ -185,6 +190,12 @@ template {
 }
 .hidden {
   display: none
+}
+.svg-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden
 }
 .badge-placeholder {
   display: inline-block;
@@ -354,7 +365,9 @@ img {
   font-size: 2rem
 }
 .gdoc-brand__img {
-  margin-right: 1rem
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem
 }
 .gdoc-nav {
   flex: 0 0 16rem;
@@ -375,10 +388,10 @@ img {
   margin: 0;
   padding: 0
 }
-.gdoc-nav__control .icon.menu {
+.gdoc-nav__control .icon.gdoc_menu {
   display: inline-block
 }
-.gdoc-nav__control .icon.arrow-back {
+.gdoc-nav__control .icon.gdoc_arrow_back {
   display: none
 }
 .gdoc-nav__list {
@@ -409,18 +422,18 @@ img {
 .gdoc-nav__toggle ~ label .icon {
   font-size: .7rem
 }
-.gdoc-nav__toggle:not(:checked) ~ label .icon.keyborad_arrow_down,
+.gdoc-nav__toggle:not(:checked) ~ label .icon.gdoc_keyborad_arrow_down,
 .gdoc-nav__toggle:not(:checked) ~ ul {
   display: none
 }
-.gdoc-nav__toggle:not(:checked) ~ label .icon.keyborad_arrow_left {
+.gdoc-nav__toggle:not(:checked) ~ label .icon.gdoc_keyborad_arrow_left {
   display: block
 }
-.gdoc-nav__toggle:checked ~ label .icon.keyborad_arrow_down,
+.gdoc-nav__toggle:checked ~ label .icon.gdoc_keyborad_arrow_down,
 .gdoc-nav__toggle:checked ~ ul {
   display: block
 }
-.gdoc-nav__toggle:checked ~ label .icon.keyborad_arrow_left {
+.gdoc-nav__toggle:checked ~ label .icon.gdoc_keyborad_arrow_left {
   display: none
 }
 .gdoc-nav--main > ul > li > label,
@@ -625,7 +638,7 @@ img {
   }
 }
 .gdoc-search__list {
-  display: none;
+  visibility: hidden;
   background: #fff;
   border-radius: .15rem;
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
@@ -656,8 +669,9 @@ img {
 .gdoc-search__list .icon {
   margin-right: .25rem
 }
-.gdoc-search:focus-within .gdoc-search__list.has-hits {
-  display: block!important
+.gdoc-search:focus-within .gdoc-search__list.has-hits,
+.gdoc-search__list.has-hits:active {
+  visibility: visible
 }
 .gdoc-error {
   padding: 6rem 1rem;
@@ -665,8 +679,8 @@ img {
   max-width: 45em
 }
 .gdoc-error .icon {
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   color: #495057
 }
 .gdoc-error__link,
@@ -762,14 +776,14 @@ img {
   text-decoration: underline
 }
 .gdoc-markdown__link--raw {
-  text-decoration: none;
-  color: #343a40
+  text-decoration: none!important;
+  color: #343a40!important
 }
 .gdoc-markdown__link--raw:hover {
-  text-decoration: none
+  text-decoration: none!important
 }
 .gdoc-markdown__link--raw:visited {
-  color: #343a40
+  color: #343a40!important
 }
 .gdoc-markdown img {
   max-width: 100%;
