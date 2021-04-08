@@ -242,7 +242,7 @@ will print debug messages.
 
 # AUTHOR
 
-James Reed <jcrd@tuta.io>
+James Reed <jcrd@sessiond.org>
 
 # REPORTING BUGS
 

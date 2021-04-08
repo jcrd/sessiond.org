@@ -44,7 +44,7 @@ If no command is provided, it lists running inhibitors.
 
 # AUTHOR
 
-James Reed <jcrd@tuta.io>
+James Reed <jcrd@sessiond.org>
 
 # REPORTING BUGS
 
