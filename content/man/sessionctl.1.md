@@ -17,10 +17,11 @@ its DBus service.
 
 # COMMANDS
 
-- **run** \[_UNIT_\]
+- **run** \[_SERVICE_\]
 
-    Run a new session, with _UNIT_ as the main unit if provided.
-    The default unit is _sessiond-session.target_.
+    Run a new session, with _SERVICE_ as the window manager service if provided.
+    By default, the service installed under the _window-manager.service_ alias is
+    used.
 
 - **stop**
 

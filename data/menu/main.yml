@@ -23,12 +23,12 @@ main:
     sub:
       - name: Starting the session
         ref: "/session-management.md#starting-the-session"
-      - name: Running services
-        ref: "/session-management.md#running-services"
-      - name: Stopping the session
-        ref: "/session-management.md#stopping-the-session"
       - name: Running a window manager
         ref: "/session-management.md#running-a-window-manager"
+      - name: Running services
+        ref: "/session-management.md#running-services"
+      - name: Manually stopping the session
+        ref: "/session-management.md#manually-stopping-the-session"
       - name: Locking the session
         ref: "/session-management.md#locking-the-session"
       - name: Inhibiting inactivity

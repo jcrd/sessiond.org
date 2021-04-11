@@ -5,13 +5,40 @@ title: Session management
 ## Starting the session
 
 A sessiond-based session should be started via a display manager, using
-the provided `sessiond.desktop` Desktop Entry file.
+the provided `sessiond session` desktop entry.
 
 For example, configure `lightdm` to start a sessiond session by setting
 `user-session=sessiond` in `/etc/lightdm/lightdm.conf`.
 
-Alternatively, a window manager can be run directly via a custom Desktop Entry
-file. See [Running a window manager](#running-a-window-manager).
+## Running a window manager
+
+To use sessiond alongside a window manager, the window manager service must
+include:
+```
+[Install]
+Alias=window-manager.service
+```
+
+An example `twm.service`:
+```
+[Unit]
+Description=Window manager
+Requires=sessiond-session.target
+After=sessiond.service
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/twm
+Restart=always
+
+[Install]
+Alias=window-manager.service
+```
+
+Enable the window manager service with `systemctl --user enable twm.service`.
+Now, when the `sessiond session` is started via the display manager, this
+service will run as the window manager and the session will be stopped when it
+exits.
 
 ## Running services
 
@@ -37,11 +64,9 @@ so the service is started when the session begins.
 
 It can then be enabled with `systemctl --user enable <service>`.
 
-See below for example services.
-
 [1]: https://www.freedesktop.org/software/systemd/man/systemd.special.html#graphical-session.target
 
-## Stopping the session
+## Manually stopping the session
 
 The session can be stopped with `sessionctl stop`. This will stop
 `graphical-session.target` and all units that are part of the session.
@@ -53,55 +78,6 @@ the session. To configure a service to stop the session when it exits, include:
 [Service]
 ExecStopPost=/usr/bin/sessionctl stop
 ```
-
-Below is an example `awesome.service` that stops the session when the Awesome
-window manager exits:
-
-```
-[Unit]
-Description=Awesome window manager
-PartOf=graphical-session.target
-
-[Service]
-ExecStart=/usr/bin/awesome
-ExecStopPost=/usr/bin/sessionctl stop
-
-[Install]
-WantedBy=graphical-session.target
-```
-
-However, this is not necessary when running a window manager as described below.
-
-## Running a window manager
-
-To use sessiond alongside a window manager, the session can be started with:
-`sessionctl run window-manager.service`
-
-An example `window-manager.service`:
-```
-[Unit]
-Description=Window manager
-Requires=sessiond-session.target
-After=sessiond.service
-PartOf=graphical-session.target
-
-[Service]
-ExecStart=/usr/bin/twm
-Restart=always
-```
-
-A custom Desktop Entry can be used to run the window manager and session:
-```
-[Desktop Entry]
-Name=twm
-Comment=Window manager
-TryExec=twm
-Exec=sessionctl run window-manager.service
-Type=Application
-```
-
-This entry can be selected via the display manager or set as the default in its
-configuration file.
 
 ## Locking the session
 
