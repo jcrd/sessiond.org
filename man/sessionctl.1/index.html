@@ -366,6 +366,37 @@
             
             <span class="flex">
                 
+                <a href="/session-management/#running-a-window-manager"
+                    class="gdoc-nav__entry ">
+                    Running a window manager
+                </a>
+            </span>
+            
+        
+
+        
+    </li>
+
+
+    
+    
+
+    <li>
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+            <span class="flex">
+                
                 <a href="/session-management/#running-services"
                     class="gdoc-nav__entry ">
                     Running services
@@ -397,40 +428,9 @@
             
             <span class="flex">
                 
-                <a href="/session-management/#stopping-the-session"
+                <a href="/session-management/#manually-stopping-the-session"
                     class="gdoc-nav__entry ">
-                    Stopping the session
-                </a>
-            </span>
-            
-        
-
-        
-    </li>
-
-
-    
-    
-
-    <li>
-        
-        
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-            
-            <span class="flex">
-                
-                <a href="/session-management/#running-a-window-manager"
-                    class="gdoc-nav__entry ">
-                    Running a window manager
+                    Manually stopping the session
                 </a>
             </span>
             
@@ -915,9 +915,10 @@ its DBus service.</p>
     </h1>
 </div><ul>
 <li>
-<p><strong>run</strong> [<em>UNIT</em>]</p>
-<p>Run a new session, with <em>UNIT</em> as the main unit if provided.
-The default unit is <em>sessiond-session.target</em>.</p>
+<p><strong>run</strong> [<em>SERVICE</em>]</p>
+<p>Run a new session, with <em>SERVICE</em> as the window manager service if provided.
+By default, the service installed under the <em>window-manager.service</em> alias is
+used.</p>
 </li>
 <li>
 <p><strong>stop</strong></p>
