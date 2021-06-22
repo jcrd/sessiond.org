@@ -5,18 +5,6 @@ main:
 
   - name: Configuration
     ref: "/configuration.md"
-    sub:
-      - name: Hooks
-        ref: "/configuration.md#hooks"
-
-  - name: DBus service
-    ref: "/dbus-service.md"
-    sub:
-      - name: sessionctl
-        ref: "/dbus-service.md#sessionctl"
-
-  - name: systemd targets
-    ref: "/systemd-targets.md"
 
   - name: Session management
     ref: "/session-management.md"
@@ -33,6 +21,12 @@ main:
         ref: "/session-management.md#locking-the-session"
       - name: Inhibiting inactivity
         ref: "/session-management.md#inhibiting-inactivity"
+
+  - name: DBus service
+    ref: "/dbus-service.md"
+
+  - name: systemd targets
+    ref: "/systemd-targets.md"
 
   - name: Python API
     ref: "/python.md"
