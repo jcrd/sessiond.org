@@ -5,7 +5,12 @@ more:
     external: true
     icon: "gdoc_download"
 
-  - name: View Source
+  - name: sessiond source
     ref: "https://github.com/jcrd/sessiond"
     external: true
     icon: "gdoc_github"
+
+  - name: website source
+    ref: "https://github.com/jcrd/sessiond.org"
+    external: true
+    icon: "gdoc_link"
