@@ -2,6 +2,8 @@
 title: Session management
 ---
 
+{{< toc >}}
+
 ## Starting the session
 
 A sessiond-based session should be started via a display manager, using
