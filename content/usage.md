@@ -1,5 +1,5 @@
 ---
-title: Session management
+title: Usage
 ---
 
 {{< toc >}}
