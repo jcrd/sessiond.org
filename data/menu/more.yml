@@ -1,14 +1,14 @@
 ---
 more:
+  - name: Report issue
+    ref: "https://github.com/jcrd/sessiond/issues"
+    external: true
+    icon: "gdoc_github"
+
   - name: Releases
     ref: "https://github.com/jcrd/sessiond/releases"
     external: true
     icon: "gdoc_download"
-
-  - name: sessiond source
-    ref: "https://github.com/jcrd/sessiond"
-    external: true
-    icon: "gdoc_github"
 
   - name: website source
     ref: "https://github.com/jcrd/sessiond.org"
