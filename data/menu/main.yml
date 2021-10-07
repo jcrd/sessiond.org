@@ -1,7 +1,7 @@
 ---
 main:
-  - name: Packages
-    ref: "/packages.md"
+  - name: Getting started
+    ref: "/getting-started.md"
 
   - name: Configuration
     ref: "/configuration.md"

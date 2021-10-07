@@ -15,3 +15,5 @@ manager or desktop environment that does not provide its own session management.
 * hooks triggered by inactivity or signals
 * a DBus service
 * (optional) management of DPMS settings
+
+{{< button size="large" relref="/getting-started" >}}Get started{{< /button >}}
