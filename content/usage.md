@@ -1,5 +1,6 @@
 ---
 title: Usage
+geekdocEditPath: "edit/master/content"
 ---
 
 {{< toc >}}

@@ -1,5 +1,6 @@
 ---
 title: DBus service
+geekdocEditPath: "edit/master/content"
 ---
 
 sessiond provides a DBus service on the session bus at the well-known name

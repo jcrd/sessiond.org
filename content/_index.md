@@ -1,5 +1,6 @@
 ---
 title: Overview
+geekdocEditPath: "edit/master/content"
 ---
 
 sessiond is a standalone X session manager that reports the idle status of a
