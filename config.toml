@@ -20,7 +20,6 @@ geekdocLogo = "favicon/favicon.ico"
 geekdocMenuBundle = true
 geekdocNextPrev = false
 geekdocSearch = false
-geekdocBreadcrumb = false
 geekdocRepo="https://github.com/jcrd/sessiond.org"
 
 [minify]
