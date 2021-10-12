@@ -219,6 +219,14 @@ OPTIONS      -h, &ndash;help"/>
             <aside class="gdoc-nav">
                 <nav>
     
+    <div class="gdoc-search">
+        <svg class="icon gdoc_search"><use xlink:href="#gdoc_search"></use></svg>
+        <input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search..."
+            aria-label="Search" maxlength="64" />
+        <div class="gdoc-search__spinner spinner hidden"></div>
+        <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
+    </div>
+
 
 
     <section class="gdoc-nav--main">
@@ -978,9 +986,40 @@ OPTIONS      -h, &ndash;help"/>
 
 
 <div class="gdoc-page__header flex flex-wrap
-     justify-end 
+     justify-between 
      hidden-mobile 
-     hidden " itemprop="breadcrumb">
+    " itemprop="breadcrumb">
+    
+    <div>
+        <svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            
+            
+            
+            
+    
+    
+        
+        
+        
+        
+    
+    
+        
+        
+        
+        
+    
+    
+        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Overview</span></a><meta itemprop='position' content='1' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/man/' href='/man/'><span itemprop='name'>Manpages</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>sessiond.1</span><meta itemprop='position' content='3' /></li>
+    
+
+    
+
+    
+
+        </ol>
+    </div>
     
     
 </div>
@@ -1772,6 +1811,12 @@ GNU General Public License v3.0 or later.</p>
     </div>
 
     
+
+
+
+
+<script defer src="/js/en.search.min.dd11fe9592abe2585c1fbd6e505e89a56e02137e8d9fa50a46a01083b7682837.js"></script>
+
 
 
 <script defer src="/js/clipboard-27784b7376.min.js"></script>
