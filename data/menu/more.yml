@@ -3,7 +3,7 @@ more:
   - name: Report issue
     ref: "https://github.com/jcrd/sessiond/issues"
     external: true
-    icon: "gdoc_github"
+    icon: "gdoc_code"
 
   - name: Releases
     ref: "https://github.com/jcrd/sessiond/releases"
