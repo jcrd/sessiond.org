@@ -9,9 +9,9 @@
   "js/katex-loader.min.js": "js/katex-loader-3cfedeea38.min.js",
   "js/katex.min.js": "js/katex-b842636c68.min.js",
   "js/mermaid-loader.min.js": "js/mermaid-loader-1bd1515cbf.min.js",
-  "js/mermaid.min.js": "js/mermaid-ebef212c8c.min.js",
+  "js/mermaid.min.js": "js/mermaid-beaf30d1e1.min.js",
   "katex.min.css": "katex-1890dd8a4a.min.css",
-  "main.min.css": "main-1be624d457.min.css",
+  "main.min.css": "main-75e23a8177.min.css",
   "mobile.min.css": "mobile-3fc330242c.min.css",
   "print.min.css": "print-f79fc3e5d7.min.css"
 }
