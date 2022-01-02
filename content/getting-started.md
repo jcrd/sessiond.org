@@ -51,14 +51,6 @@ sudo python3 setup.py install
 
 {{< /tabs >}}
 
-## Configuration
-
-sessiond does not require configuration but allows it to modify the default behavior.
-
-See [Configuration][configuration] for more information.
-
-[configuration]: {{< ref "/configuration.md" >}}
-
 ## Usage
 
 See [Usage][usage] for details about using sessiond.
@@ -70,3 +62,11 @@ Examples of services for use in a sessiond session can be found [here][services]
 [usage]: {{< ref "/usage.md" >}}
 [dovetail]: https://github.com/jcrd/dovetail/blob/master/systemd/dovetail.service
 [services]: https://github.com/jcrd/configs/tree/master/systemd/user
+
+## Configuration
+
+sessiond does not require configuration but allows it to modify the default behavior.
+
+See [Configuration][configuration] for more information.
+
+[configuration]: {{< ref "/configuration.md" >}}

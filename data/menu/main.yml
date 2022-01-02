@@ -3,9 +3,6 @@ main:
   - name: Getting started
     ref: "/getting-started.md"
 
-  - name: Configuration
-    ref: "/configuration.md"
-
   - name: Usage
     ref: "/usage.md"
     sub:
@@ -21,6 +18,9 @@ main:
         ref: "/usage.md#locking-the-session"
       - name: Inhibiting inactivity
         ref: "/usage.md#inhibiting-inactivity"
+
+  - name: Configuration
+    ref: "/configuration.md"
 
   - name: DBus service
     ref: "/dbus-service.md"
