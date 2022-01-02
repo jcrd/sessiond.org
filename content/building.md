@@ -3,8 +3,6 @@ title: Building
 geekdocEditPath: "edit/master/content"
 ---
 
-{{< toc >}}
-
 ## Dependencies
 
 * [meson][1] >= 0.47.0 [*build*]
