@@ -43,25 +43,52 @@ its DBus service.
 
     List sessiond properties.
 
-- **backlight**
+- **backlight** \[_NAME_\]
 
-    Interact with backlights. Subcommands:
+    Interact with backlights.
+    If backlight _NAME_ is given with no options, print brightness.
+    If no arguments are given, list backlights.
 
-    - **list**
+    Options:
 
-        List backlights.
-
-    - **get** _BACKLIGHT_
-
-        Get backlight brightness.
-
-    - **set** _BACKLIGHT_ _VALUE_
+    - **-s** _VALUE_, **--set** _VALUE_
 
         Set backlight brightness.
 
-    - **inc** _BACKLIGHT_ _VALUE_
+    - **-i** _VALUE_, **--inc** _VALUE_
 
-        Increment backlight brightness. Prints the new brightness value.
+        Increment backlight brightness.
+        Prints the new brightness value.
+
+- **audiosink** \[_ID_\]
+
+    Interact with audio sinks.
+    If audio sink _ID_ is given with no options, print volume and mute state.
+    If no arguments are given, list audio sinks.
+
+    Options:
+
+    - **-s** _VALUE_, **--set** _VALUE_
+
+        Set audio sink volume.
+
+    - **-i** _VALUE_, **--inc** _VALUE_
+
+        Increment audio sink volume.
+        Prints the new volume value.
+
+    - **-m**, **--mute**
+
+        Mute audio sink.
+
+    - **-u**, **--unmute**
+
+        Unmute audio sink.
+
+    - **-t**, **--toggle-mute**
+
+        Toggle audio sink mute state.
+        Prints the new mute state.
 
 - **version**
 

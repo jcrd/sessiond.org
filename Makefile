@@ -3,7 +3,8 @@ MANPAGES = $(MANDIR)/sessiond.1 \
 		   $(MANDIR)/sessionctl.1 \
 		   $(MANDIR)/sessiond-inhibit.1 \
 		   $(MANDIR)/sessiond.conf.5 \
-		   $(MANDIR)/sessiond-hooks.5
+		   $(MANDIR)/sessiond-hooks.5 \
+		   $(MANDIR)/sessiond-dbus.8
 
 SPHINX_FILES = sphinx/conf.py \
 			   sphinx/index.rst \

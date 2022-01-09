@@ -6,6 +6,126 @@ title: Python API
 # python-sessiond API
 
 
+### class sessiond.AudioSink(id)
+An interface to a sessiond AudioSink object.
+
+
+* **Parameters**
+
+    **id** – The audio sink’s ID
+
+
+
+#### property id()
+Audio sink’s ID.
+
+
+* **Returns**
+
+    Audio sink’s ID
+
+
+
+#### inc_volume(v)
+Increment the audio sink’s volume.
+
+
+* **Parameters**
+
+    **v** – Volume value by which to increment
+
+
+
+* **Returns**
+
+    The new volume value
+
+
+
+* **Raises**
+
+    **dbus.exception.DBusException** – Raised if unable to increment volume
+
+
+
+#### property mute()
+Audio sink’s mute state.
+
+
+* **Returns**
+
+    True if muted, False otherwise
+
+
+
+#### property name()
+Audio sink’s name.
+
+
+* **Returns**
+
+    Audio sink’s name
+
+
+
+#### set_mute(m)
+Set the audio sink’s mute state.
+
+
+* **Parameters**
+
+    **m** – Mute state
+
+
+
+* **Raises**
+
+    **dbus.exception.DBusException** – Raised if unable to set mute state
+
+
+
+#### set_volume(v)
+Set the audio sink’s volume.
+
+
+* **Parameters**
+
+    **v** – Volume value
+
+
+
+* **Raises**
+
+    **dbus.exception.DBusException** – Raised if unable to set volume
+
+
+
+#### toggle_mute()
+Toggle the audio sink’s mute state.
+
+
+* **Returns**
+
+    The new mute state
+
+
+
+* **Raises**
+
+    **dbus.exception.DBusException** – Raised if unable to toggle mute state
+
+
+
+#### property volume()
+Audio sink’s volume.
+
+
+* **Returns**
+
+    Audio sink’s volume
+
+
+
 ### class sessiond.Backlight(name)
 An interface to a sessiond Backlight object.
 
@@ -174,6 +294,16 @@ Get a DBus property’s value.
 An interface to sessiond’s Session.
 
 
+#### property audiosinks()
+List of audio sinks.
+
+
+* **Returns**
+
+    A list of AudioSink DBus object paths
+
+
+
 #### property backlights()
 List of backlights.
 
@@ -181,6 +311,16 @@ List of backlights.
 * **Returns**
 
     A list of Backlight DBus object paths
+
+
+
+#### property default_audiosink()
+Get the default audio sink.
+
+
+* **Returns**
+
+    The default audio sink’s DBus object path
 
 
 

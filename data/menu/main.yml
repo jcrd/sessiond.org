@@ -37,6 +37,8 @@ main:
   - name: Manpages
     ref: "/man"
     sub:
+      - name: sessiond.1
+        ref: "/man/sessiond.1.md"
       - name: sessionctl.1
         ref: "/man/sessionctl.1.md"
       - name: sessiond-inhibit.1
@@ -45,5 +47,5 @@ main:
         ref: "/man/sessiond.conf.5.md"
       - name: sessiond-hooks.5
         ref: "/man/sessiond-hooks.5.md"
-      - name: sessiond.1
-        ref: "/man/sessiond.1.md"
+      - name: sessiond-dbus.8
+        ref: "/man/sessiond-dbus.8.md"

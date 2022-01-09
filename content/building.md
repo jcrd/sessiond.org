@@ -11,6 +11,7 @@ geekdocEditPath: "edit/master/content"
 * libx11 [*build*]
 * libxi [*build*]
 * libxext (optional, for DPMS support) [*build*]
+* libwireplumber-0.4 (optional, for audio sink support) [*build*]
 * python3-setuptools [*build*]
 * python3 [*runtime*]
 * dbus-python [*runtime*]

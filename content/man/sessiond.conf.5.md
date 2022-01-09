@@ -56,6 +56,11 @@ See: https://github.com/toml-lang/toml/tree/v0.5.0.
 
     DPMS off timeout in seconds to use while session is locked.
 
+- _MuteAudio=_
+
+    If "true", mute the default audio sink while the session is locked.
+    The mute state will be restored when unlocked.
+
 ## \[DPMS\]
 
 - _Enable=_
