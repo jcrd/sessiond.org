@@ -25,7 +25,7 @@ Run a new session, with SERVICE as the window manager service if provided. By de
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sessiond.org/man/sessionctl.1/" />
 <meta property="article:section" content="man" />
-<meta property="article:modified_time" content="2021-04-11T15:36:23-06:00" />
+<meta property="article:modified_time" content="2022-01-09T15:00:07-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="sessionctl.1" />
 <meta name="twitter:description" content="NAME    sessionctl - standalone X session manager client
@@ -65,7 +65,7 @@ Run a new session, with SERVICE as the window manager service if provided. By de
 "copyrightYear": "0001",
 "dateCreated": "0001-01-01T00:00:00.00Z",
 "datePublished": "0001-01-01T00:00:00.00Z",
-"dateModified": "2021-04-11T15:36:23.00Z",
+"dateModified": "2022-01-09T15:00:07.00Z",
 "publisher": {
 "@type": "Organization",
 "name": "sessiond",
@@ -78,7 +78,7 @@ Run a new session, with SERVICE as the window manager service if provided. By de
 }
 },
 "url": "https:\/\/sessiond.org\/man\/sessionctl.1\/",
-"wordCount": "143",
+"wordCount": "227",
 "genre": []
 }
 </script>
@@ -340,6 +340,11 @@ Run a new session, with SERVICE as the window manager service if provided. By de
 <ul class="gdoc-nav__list">
 <li>
 <span class="flex">
+<a href="/man/sessiond.1/" class="gdoc-nav__entry "> sessiond.1 </a>
+</span>
+</li>
+<li>
+<span class="flex">
 <a href="/man/sessionctl.1/" class="gdoc-nav__entry is-active"> sessionctl.1 </a>
 </span>
 </li>
@@ -360,7 +365,7 @@ Run a new session, with SERVICE as the window manager service if provided. By de
 </li>
 <li>
 <span class="flex">
-<a href="/man/sessiond.1/" class="gdoc-nav__entry "> sessiond.1 </a>
+<a href="/man/sessiond-dbus.8/" class="gdoc-nav__entry "> sessiond-dbus.8 </a>
 </span>
 </li>
 </ul>
@@ -485,24 +490,44 @@ Run a new session, with SERVICE as the window manager service if provided. By de
 <p>List sessiond properties.</p>
 </li>
 <li>
-<p><strong>backlight</strong></p>
-<p>Interact with backlights. Subcommands:</p>
+<p><strong>backlight</strong> [<em>NAME</em>]</p>
+<p>Interact with backlights. If backlight <em>NAME</em> is given with no options, print brightness. If no arguments are given, list backlights.</p>
+<p>Options:</p>
 <ul>
 <li>
-<p><strong>list</strong></p>
-<p>List backlights.</p>
-</li>
-<li>
-<p><strong>get</strong> <em>BACKLIGHT</em></p>
-<p>Get backlight brightness.</p>
-</li>
-<li>
-<p><strong>set</strong> <em>BACKLIGHT</em> <em>VALUE</em></p>
+<p><strong>-s</strong> <em>VALUE</em>, <strong>&ndash;set</strong> <em>VALUE</em></p>
 <p>Set backlight brightness.</p>
 </li>
 <li>
-<p><strong>inc</strong> <em>BACKLIGHT</em> <em>VALUE</em></p>
+<p><strong>-i</strong> <em>VALUE</em>, <strong>&ndash;inc</strong> <em>VALUE</em></p>
 <p>Increment backlight brightness. Prints the new brightness value.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>audiosink</strong> [<em>ID</em>]</p>
+<p>Interact with audio sinks. If audio sink <em>ID</em> is given with no options, print volume and mute state. If no arguments are given, list audio sinks.</p>
+<p>Options:</p>
+<ul>
+<li>
+<p><strong>-s</strong> <em>VALUE</em>, <strong>&ndash;set</strong> <em>VALUE</em></p>
+<p>Set audio sink volume.</p>
+</li>
+<li>
+<p><strong>-i</strong> <em>VALUE</em>, <strong>&ndash;inc</strong> <em>VALUE</em></p>
+<p>Increment audio sink volume. Prints the new volume value.</p>
+</li>
+<li>
+<p><strong>-m</strong>, <strong>&ndash;mute</strong></p>
+<p>Mute audio sink.</p>
+</li>
+<li>
+<p><strong>-u</strong>, <strong>&ndash;unmute</strong></p>
+<p>Unmute audio sink.</p>
+</li>
+<li>
+<p><strong>-t</strong>, <strong>&ndash;toggle-mute</strong></p>
+<p>Toggle audio sink mute state. Prints the new mute state.</p>
 </li>
 </ul>
 </li>

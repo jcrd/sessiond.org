@@ -5,20 +5,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
-<meta name="description" content="class sessiond.Backlight(name)  property brightness() property dev_path() inc_brightness(v) property max_brightness() property online() set_brightness(v) property subsystem() property sys_path()   class sessiond.DBusIFace(path, iface)  static convert(val) get_properties() get_property(name)   class sessiond.Session()  property backlights() property idle_hint() property idle_since_hint() property idle_since_hint_monotonic() inhibit(who=&#39;&#39;, why=&#39;&#39;) property inhibited_hint() list_inhibitors() lock() property locked_hint() stop_inhibitors() uninhibit(id) unlock() property version()       python-sessiond API    class sessiond.Backlight(name)    An interface to a sessiond Backlight object.">
+<meta name="description" content="class sessiond.AudioSink(id)  property id() inc_volume(v) property mute() property name() set_mute(m) set_volume(v) toggle_mute() property volume()   class sessiond.Backlight(name)  property brightness() property dev_path() inc_brightness(v) property max_brightness() property online() set_brightness(v) property subsystem() property sys_path()   class sessiond.DBusIFace(path, iface)  static convert(val) get_properties() get_property(name)   class sessiond.Session()  property audiosinks() property backlights() property default_audiosink() property idle_hint() property idle_since_hint() property idle_since_hint_monotonic() inhibit(who=&#39;&#39;, why=&#39;&#39;) property inhibited_hint() list_inhibitors() lock() property locked_hint() stop_inhibitors() uninhibit(id) unlock() property version()       python-sessiond API    class sessiond.">
 <title>Python API | sessiond</title>
 <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <meta property="og:title" content="Python API" />
-<meta property="og:description" content="class sessiond.Backlight(name)  property brightness() property dev_path() inc_brightness(v) property max_brightness() property online() set_brightness(v) property subsystem() property sys_path()   class sessiond.DBusIFace(path, iface)  static convert(val) get_properties() get_property(name)   class sessiond.Session()  property backlights() property idle_hint() property idle_since_hint() property idle_since_hint_monotonic() inhibit(who=&#39;&#39;, why=&#39;&#39;) property inhibited_hint() list_inhibitors() lock() property locked_hint() stop_inhibitors() uninhibit(id) unlock() property version()       python-sessiond API    class sessiond.Backlight(name)    An interface to a sessiond Backlight object." />
+<meta property="og:description" content="class sessiond.AudioSink(id)  property id() inc_volume(v) property mute() property name() set_mute(m) set_volume(v) toggle_mute() property volume()   class sessiond.Backlight(name)  property brightness() property dev_path() inc_brightness(v) property max_brightness() property online() set_brightness(v) property subsystem() property sys_path()   class sessiond.DBusIFace(path, iface)  static convert(val) get_properties() get_property(name)   class sessiond.Session()  property audiosinks() property backlights() property default_audiosink() property idle_hint() property idle_since_hint() property idle_since_hint_monotonic() inhibit(who=&#39;&#39;, why=&#39;&#39;) property inhibited_hint() list_inhibitors() lock() property locked_hint() stop_inhibitors() uninhibit(id) unlock() property version()       python-sessiond API    class sessiond." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sessiond.org/python/" />
 <meta property="article:section" content="" />
-<meta property="article:modified_time" content="2021-02-22T15:02:17-07:00" />
+<meta property="article:modified_time" content="2022-01-09T15:00:07-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Python API" />
-<meta name="twitter:description" content="class sessiond.Backlight(name)  property brightness() property dev_path() inc_brightness(v) property max_brightness() property online() set_brightness(v) property subsystem() property sys_path()   class sessiond.DBusIFace(path, iface)  static convert(val) get_properties() get_property(name)   class sessiond.Session()  property backlights() property idle_hint() property idle_since_hint() property idle_since_hint_monotonic() inhibit(who=&#39;&#39;, why=&#39;&#39;) property inhibited_hint() list_inhibitors() lock() property locked_hint() stop_inhibitors() uninhibit(id) unlock() property version()       python-sessiond API    class sessiond.Backlight(name)    An interface to a sessiond Backlight object." />
+<meta name="twitter:description" content="class sessiond.AudioSink(id)  property id() inc_volume(v) property mute() property name() set_mute(m) set_volume(v) toggle_mute() property volume()   class sessiond.Backlight(name)  property brightness() property dev_path() inc_brightness(v) property max_brightness() property online() set_brightness(v) property subsystem() property sys_path()   class sessiond.DBusIFace(path, iface)  static convert(val) get_properties() get_property(name)   class sessiond.Session()  property audiosinks() property backlights() property default_audiosink() property idle_hint() property idle_since_hint() property idle_since_hint_monotonic() inhibit(who=&#39;&#39;, why=&#39;&#39;) property inhibited_hint() list_inhibitors() lock() property locked_hint() stop_inhibitors() uninhibit(id) unlock() property version()       python-sessiond API    class sessiond." />
 <script src="/js/darkmode-ce906ea916.min.js"></script>
 <link rel="preload" as="font" href="/fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
 <link rel="preload" as="font" href="/fonts/LiberationSans.woff2" type="font/woff2" crossorigin="anonymous">
@@ -39,7 +39,7 @@
 "name": "Python API",
 "headline": "Python API",
 "alternativeHeadline": "",
-"description": "class sessiond.Backlight(name)  property brightness() property dev_path() inc_brightness(v) property max_brightness() property online() set_brightness(v) property subsystem() property sys_path()   class sessiond.DBusIFace(path, iface)  static convert(val) get_properties() get_property(name)   class sessiond.Session()  property backlights() property idle_hint() property idle_since_hint() property idle_since_hint_monotonic() inhibit(who=\u0027\u0027, why=\u0027\u0027) property inhibited_hint() list_inhibitors() lock() property locked_hint() stop_inhibitors() uninhibit(id) unlock() property version()       python-sessiond API    class sessiond.Backlight(name)    An interface to a sessiond Backlight object.",
+"description": "class sessiond.AudioSink(id)  property id() inc_volume(v) property mute() property name() set_mute(m) set_volume(v) toggle_mute() property volume()   class sessiond.Backlight(name)  property brightness() property dev_path() inc_brightness(v) property max_brightness() property online() set_brightness(v) property subsystem() property sys_path()   class sessiond.DBusIFace(path, iface)  static convert(val) get_properties() get_property(name)   class sessiond.Session()  property audiosinks() property backlights() property default_audiosink() property idle_hint() property idle_since_hint() property idle_since_hint_monotonic() inhibit(who=\u0027\u0027, why=\u0027\u0027) property inhibited_hint() list_inhibitors() lock() property locked_hint() stop_inhibitors() uninhibit(id) unlock() property version()       python-sessiond API    class sessiond.",
 "inLanguage": "en",
 "isFamilyFriendly": "true",
 "mainEntityOfPage": {
@@ -50,7 +50,7 @@
 "copyrightYear": "0001",
 "dateCreated": "0001-01-01T00:00:00.00Z",
 "datePublished": "0001-01-01T00:00:00.00Z",
-"dateModified": "2021-02-22T15:02:17.00Z",
+"dateModified": "2022-01-09T15:00:07.00Z",
 "publisher": {
 "@type": "Organization",
 "name": "sessiond",
@@ -63,7 +63,7 @@
 }
 },
 "url": "https:\/\/sessiond.org\/python\/",
-"wordCount": "454",
+"wordCount": "649",
 "genre": []
 }
 </script>
@@ -325,6 +325,11 @@
 <ul class="gdoc-nav__list">
 <li>
 <span class="flex">
+<a href="/man/sessiond.1/" class="gdoc-nav__entry "> sessiond.1 </a>
+</span>
+</li>
+<li>
+<span class="flex">
 <a href="/man/sessionctl.1/" class="gdoc-nav__entry "> sessionctl.1 </a>
 </span>
 </li>
@@ -345,7 +350,7 @@
 </li>
 <li>
 <span class="flex">
-<a href="/man/sessiond.1/" class="gdoc-nav__entry "> sessiond.1 </a>
+<a href="/man/sessiond-dbus.8/" class="gdoc-nav__entry "> sessiond-dbus.8 </a>
 </span>
 </li>
 </ul>
@@ -408,6 +413,18 @@
 <div class="gdoc-toc gdoc-toc__level--6">
 <nav id="TableOfContents">
 <ul>
+<li><a href="#class-sessiondaudiosinkid">class sessiond.AudioSink(id)</a>
+<ul>
+<li><a href="#property-id">property id()</a></li>
+<li><a href="#inc_volumev">inc_volume(v)</a></li>
+<li><a href="#property-mute">property mute()</a></li>
+<li><a href="#property-name">property name()</a></li>
+<li><a href="#set_mutem">set_mute(m)</a></li>
+<li><a href="#set_volumev">set_volume(v)</a></li>
+<li><a href="#toggle_mute">toggle_mute()</a></li>
+<li><a href="#property-volume">property volume()</a></li>
+</ul>
+</li>
 <li><a href="#class-sessiondbacklightname">class sessiond.Backlight(name)</a>
 <ul>
 <li><a href="#property-brightness">property brightness()</a></li>
@@ -429,7 +446,9 @@
 </li>
 <li><a href="#class-sessiondsession">class sessiond.Session()</a>
 <ul>
+<li><a href="#property-audiosinks">property audiosinks()</a></li>
 <li><a href="#property-backlights">property backlights()</a></li>
+<li><a href="#property-default_audiosink">property default_audiosink()</a></li>
 <li><a href="#property-idle_hint">property idle_hint()</a></li>
 <li><a href="#property-idle_since_hint">property idle_since_hint()</a></li>
 <li><a href="#property-idle_since_hint_monotonic">property idle_since_hint_monotonic()</a></li>
@@ -456,6 +475,161 @@
 </a>
 </h1>
 </div>
+<div class="gdoc-page__anchorwrap">
+<h3 id="class-sessiondaudiosinkid"> class sessiond.AudioSink(id) <a data-clipboard-text="https://sessiond.org/python/#class-sessiondaudiosinkid" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor class sessiond.AudioSink(id)" href="#class-sessiondaudiosinkid">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h3>
+</div>
+<p>An interface to a sessiond AudioSink object.</p>
+<ul>
+<li>
+<p><strong>Parameters</strong></p>
+<p><strong>id</strong> – The audio sink’s ID</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h4 id="property-id"> property id() <a data-clipboard-text="https://sessiond.org/python/#property-id" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor property id()" href="#property-id">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h4>
+</div>
+<p>Audio sink’s ID.</p>
+<ul>
+<li>
+<p><strong>Returns</strong></p>
+<p>Audio sink’s ID</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h4 id="inc_volumev"> inc_volume(v) <a data-clipboard-text="https://sessiond.org/python/#inc_volumev" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor inc_volume(v)" href="#inc_volumev">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h4>
+</div>
+<p>Increment the audio sink’s volume.</p>
+<ul>
+<li>
+<p><strong>Parameters</strong></p>
+<p><strong>v</strong> – Volume value by which to increment</p>
+</li>
+<li>
+<p><strong>Returns</strong></p>
+<p>The new volume value</p>
+</li>
+<li>
+<p><strong>Raises</strong></p>
+<p><strong>dbus.exception.DBusException</strong> – Raised if unable to increment volume</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h4 id="property-mute"> property mute() <a data-clipboard-text="https://sessiond.org/python/#property-mute" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor property mute()" href="#property-mute">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h4>
+</div>
+<p>Audio sink’s mute state.</p>
+<ul>
+<li>
+<p><strong>Returns</strong></p>
+<p>True if muted, False otherwise</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h4 id="property-name"> property name() <a data-clipboard-text="https://sessiond.org/python/#property-name" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor property name()" href="#property-name">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h4>
+</div>
+<p>Audio sink’s name.</p>
+<ul>
+<li>
+<p><strong>Returns</strong></p>
+<p>Audio sink’s name</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h4 id="set_mutem"> set_mute(m) <a data-clipboard-text="https://sessiond.org/python/#set_mutem" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor set_mute(m)" href="#set_mutem">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h4>
+</div>
+<p>Set the audio sink’s mute state.</p>
+<ul>
+<li>
+<p><strong>Parameters</strong></p>
+<p><strong>m</strong> – Mute state</p>
+</li>
+<li>
+<p><strong>Raises</strong></p>
+<p><strong>dbus.exception.DBusException</strong> – Raised if unable to set mute state</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h4 id="set_volumev"> set_volume(v) <a data-clipboard-text="https://sessiond.org/python/#set_volumev" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor set_volume(v)" href="#set_volumev">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h4>
+</div>
+<p>Set the audio sink’s volume.</p>
+<ul>
+<li>
+<p><strong>Parameters</strong></p>
+<p><strong>v</strong> – Volume value</p>
+</li>
+<li>
+<p><strong>Raises</strong></p>
+<p><strong>dbus.exception.DBusException</strong> – Raised if unable to set volume</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h4 id="toggle_mute"> toggle_mute() <a data-clipboard-text="https://sessiond.org/python/#toggle_mute" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor toggle_mute()" href="#toggle_mute">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h4>
+</div>
+<p>Toggle the audio sink’s mute state.</p>
+<ul>
+<li>
+<p><strong>Returns</strong></p>
+<p>The new mute state</p>
+</li>
+<li>
+<p><strong>Raises</strong></p>
+<p><strong>dbus.exception.DBusException</strong> – Raised if unable to toggle mute state</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h4 id="property-volume"> property volume() <a data-clipboard-text="https://sessiond.org/python/#property-volume" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor property volume()" href="#property-volume">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h4>
+</div>
+<p>Audio sink’s volume.</p>
+<ul>
+<li>
+<p><strong>Returns</strong></p>
+<p>Audio sink’s volume</p>
+</li>
+</ul>
 <div class="gdoc-page__anchorwrap">
 <h3 id="class-sessiondbacklightname"> class sessiond.Backlight(name) <a data-clipboard-text="https://sessiond.org/python/#class-sessiondbacklightname" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor class sessiond.Backlight(name)" href="#class-sessiondbacklightname">
 <svg class="icon gdoc_link">
@@ -688,6 +862,21 @@
 </div>
 <p>An interface to sessiond’s Session.</p>
 <div class="gdoc-page__anchorwrap">
+<h4 id="property-audiosinks"> property audiosinks() <a data-clipboard-text="https://sessiond.org/python/#property-audiosinks" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor property audiosinks()" href="#property-audiosinks">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h4>
+</div>
+<p>List of audio sinks.</p>
+<ul>
+<li>
+<p><strong>Returns</strong></p>
+<p>A list of AudioSink DBus object paths</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
 <h4 id="property-backlights"> property backlights() <a data-clipboard-text="https://sessiond.org/python/#property-backlights" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor property backlights()" href="#property-backlights">
 <svg class="icon gdoc_link">
 <use xlink:href="#gdoc_link"></use>
@@ -700,6 +889,21 @@
 <li>
 <p><strong>Returns</strong></p>
 <p>A list of Backlight DBus object paths</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h4 id="property-default_audiosink"> property default_audiosink() <a data-clipboard-text="https://sessiond.org/python/#property-default_audiosink" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor property default_audiosink()" href="#property-default_audiosink">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h4>
+</div>
+<p>Get the default audio sink.</p>
+<ul>
+<li>
+<p><strong>Returns</strong></p>
+<p>The default audio sink’s DBus object path</p>
 </li>
 </ul>
 <div class="gdoc-page__anchorwrap">

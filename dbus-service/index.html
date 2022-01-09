@@ -6,31 +6,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
 <meta name="description" content="sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
-See the DBus Service section of sessiond(1) for descriptions of methods, properties, and signals.
+See sessiond-dbus(8) for descriptions of methods, properties, and signals.
 For complete introspection data, use gdbus:
 gdbus introspect --session --dest org.sessiond.session1 --object-path /org/sessiond/session1 sessionctl    The sessionctl script is provided to run a sessiond session and interact with its DBus service.
-usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version} ... With no arguments, show session status.">
+usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,audiosink,version} ... With no arguments, show session status. positional arguments: {run,stop,status,lock,unlock,properties,backlight,audiosink,version} run Run session stop Stop the running session status Show session status lock Lock the session unlock Unlock the session properties List session properties backlight Interact with backlights audiosink Interact with audio sinks version Show sessiond version options: -h, --help show this help message and exit See sessionctl(1) for more information.">
 <title>DBus service | sessiond</title>
 <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <meta property="og:title" content="DBus service" />
 <meta property="og:description" content="sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
-See the DBus Service section of sessiond(1) for descriptions of methods, properties, and signals.
+See sessiond-dbus(8) for descriptions of methods, properties, and signals.
 For complete introspection data, use gdbus:
 gdbus introspect --session --dest org.sessiond.session1 --object-path /org/sessiond/session1 sessionctl    The sessionctl script is provided to run a sessiond session and interact with its DBus service.
-usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version} ... With no arguments, show session status." />
+usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,audiosink,version} ... With no arguments, show session status. positional arguments: {run,stop,status,lock,unlock,properties,backlight,audiosink,version} run Run session stop Stop the running session status Show session status lock Lock the session unlock Unlock the session properties List session properties backlight Interact with backlights audiosink Interact with audio sinks version Show sessiond version options: -h, --help show this help message and exit See sessionctl(1) for more information." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sessiond.org/dbus-service/" />
 <meta property="article:section" content="" />
-<meta property="article:modified_time" content="2021-10-12T13:37:21-06:00" />
+<meta property="article:modified_time" content="2022-01-09T15:00:07-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="DBus service" />
 <meta name="twitter:description" content="sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
-See the DBus Service section of sessiond(1) for descriptions of methods, properties, and signals.
+See sessiond-dbus(8) for descriptions of methods, properties, and signals.
 For complete introspection data, use gdbus:
 gdbus introspect --session --dest org.sessiond.session1 --object-path /org/sessiond/session1 sessionctl    The sessionctl script is provided to run a sessiond session and interact with its DBus service.
-usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version} ... With no arguments, show session status." />
+usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,audiosink,version} ... With no arguments, show session status. positional arguments: {run,stop,status,lock,unlock,properties,backlight,audiosink,version} run Run session stop Stop the running session status Show session status lock Lock the session unlock Unlock the session properties List session properties backlight Interact with backlights audiosink Interact with audio sinks version Show sessiond version options: -h, --help show this help message and exit See sessionctl(1) for more information." />
 <script src="/js/darkmode-ce906ea916.min.js"></script>
 <link rel="preload" as="font" href="/fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
 <link rel="preload" as="font" href="/fonts/LiberationSans.woff2" type="font/woff2" crossorigin="anonymous">
@@ -51,7 +51,7 @@ usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version
 "name": "DBus service",
 "headline": "DBus service",
 "alternativeHeadline": "",
-"description": "sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.\nSee the DBus Service section of sessiond(1) for descriptions of methods, properties, and signals.\nFor complete introspection data, use gdbus:\ngdbus introspect --session --dest org.sessiond.session1 --object-path \/org\/sessiond\/session1 sessionctl    The sessionctl script is provided to run a sessiond session and interact with its DBus service.\nusage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version} ... With no arguments, show session status.",
+"description": "sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.\nSee sessiond-dbus(8) for descriptions of methods, properties, and signals.\nFor complete introspection data, use gdbus:\ngdbus introspect --session --dest org.sessiond.session1 --object-path \/org\/sessiond\/session1 sessionctl    The sessionctl script is provided to run a sessiond session and interact with its DBus service.\nusage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,audiosink,version} ... With no arguments, show session status. positional arguments: {run,stop,status,lock,unlock,properties,backlight,audiosink,version} run Run session stop Stop the running session status Show session status lock Lock the session unlock Unlock the session properties List session properties backlight Interact with backlights audiosink Interact with audio sinks version Show sessiond version options: -h, --help show this help message and exit See sessionctl(1) for more information.",
 "inLanguage": "en",
 "isFamilyFriendly": "true",
 "mainEntityOfPage": {
@@ -62,7 +62,7 @@ usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version
 "copyrightYear": "0001",
 "dateCreated": "0001-01-01T00:00:00.00Z",
 "datePublished": "0001-01-01T00:00:00.00Z",
-"dateModified": "2021-10-12T13:37:21.00Z",
+"dateModified": "2022-01-09T15:00:07.00Z",
 "publisher": {
 "@type": "Organization",
 "name": "sessiond",
@@ -75,7 +75,7 @@ usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version
 }
 },
 "url": "https:\/\/sessiond.org\/dbus-service\/",
-"wordCount": "119",
+"wordCount": "118",
 "genre": []
 }
 </script>
@@ -337,6 +337,11 @@ usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version
 <ul class="gdoc-nav__list">
 <li>
 <span class="flex">
+<a href="/man/sessiond.1/" class="gdoc-nav__entry "> sessiond.1 </a>
+</span>
+</li>
+<li>
+<span class="flex">
 <a href="/man/sessionctl.1/" class="gdoc-nav__entry "> sessionctl.1 </a>
 </span>
 </li>
@@ -357,7 +362,7 @@ usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version
 </li>
 <li>
 <span class="flex">
-<a href="/man/sessiond.1/" class="gdoc-nav__entry "> sessiond.1 </a>
+<a href="/man/sessiond-dbus.8/" class="gdoc-nav__entry "> sessiond-dbus.8 </a>
 </span>
 </li>
 </ul>
@@ -426,7 +431,7 @@ usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>DBus service</h1>
 <p>sessiond provides a DBus service on the session bus at the well-known name <strong><em>org.sessiond.session1</em></strong>.</p>
-<p>See the <em>DBus Service</em> section of <a class="gdoc-markdown__link" href="https://sessiond.org/man/sessiond.1/#dbus-service">sessiond(1)</a> for descriptions of methods, properties, and signals.</p>
+<p>See <a class="gdoc-markdown__link" href="https://sessiond.org/man/sessiond-dbus.8/">sessiond-dbus(8)</a> for descriptions of methods, properties, and signals.</p>
 <p>For complete introspection data, use <strong>gdbus</strong>:</p>
 <pre tabindex="0"><code>gdbus introspect --session --dest org.sessiond.session1 --object-path /org/sessiond/session1
 </code></pre>
@@ -440,13 +445,13 @@ usage: sessionctl [-h] {run,stop,status,lock,unlock,properties,backlight,version
 </div>
 <p>The <code>sessionctl</code> script is provided to run a sessiond session and interact with its DBus service.</p>
 <pre tabindex="0"><code>usage: sessionctl [-h]
-                  {run,stop,status,lock,unlock,properties,backlight,version}
+                  {run,stop,status,lock,unlock,properties,backlight,audiosink,version}
                   ...
 
 With no arguments, show session status.
 
 positional arguments:
-  {run,stop,status,lock,unlock,properties,backlight,version}
+  {run,stop,status,lock,unlock,properties,backlight,audiosink,version}
     run                 Run session
     stop                Stop the running session
     status              Show session status
@@ -454,9 +459,10 @@ positional arguments:
     unlock              Unlock the session
     properties          List session properties
     backlight           Interact with backlights
+    audiosink           Interact with audio sinks
     version             Show sessiond version
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
 </code></pre>
 <p>See <a class="gdoc-markdown__link" href="https://sessiond.org/man/sessionctl.1/">sessionctl(1)</a> for more information.</p>

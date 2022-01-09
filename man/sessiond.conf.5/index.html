@@ -25,7 +25,7 @@ A list (of the format [&ldquo;item&rdquo;, &ldquo;item&rdquo;]) of input event t
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sessiond.org/man/sessiond.conf.5/" />
 <meta property="article:section" content="man" />
-<meta property="article:modified_time" content="2021-02-23T08:50:01-07:00" />
+<meta property="article:modified_time" content="2022-01-09T15:00:07-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="sessiond.conf.5" />
 <meta name="twitter:description" content="NAME    sessiond.conf - sessiond configuration file format
@@ -65,7 +65,7 @@ A list (of the format [&ldquo;item&rdquo;, &ldquo;item&rdquo;]) of input event t
 "copyrightYear": "0001",
 "dateCreated": "0001-01-01T00:00:00.00Z",
 "datePublished": "0001-01-01T00:00:00.00Z",
-"dateModified": "2021-02-23T08:50:01.00Z",
+"dateModified": "2022-01-09T15:00:07.00Z",
 "publisher": {
 "@type": "Organization",
 "name": "sessiond",
@@ -78,7 +78,7 @@ A list (of the format [&ldquo;item&rdquo;, &ldquo;item&rdquo;]) of input event t
 }
 },
 "url": "https:\/\/sessiond.org\/man\/sessiond.conf.5\/",
-"wordCount": "277",
+"wordCount": "298",
 "genre": []
 }
 </script>
@@ -340,6 +340,11 @@ A list (of the format [&ldquo;item&rdquo;, &ldquo;item&rdquo;]) of input event t
 <ul class="gdoc-nav__list">
 <li>
 <span class="flex">
+<a href="/man/sessiond.1/" class="gdoc-nav__entry "> sessiond.1 </a>
+</span>
+</li>
+<li>
+<span class="flex">
 <a href="/man/sessionctl.1/" class="gdoc-nav__entry "> sessionctl.1 </a>
 </span>
 </li>
@@ -360,7 +365,7 @@ A list (of the format [&ldquo;item&rdquo;, &ldquo;item&rdquo;]) of input event t
 </li>
 <li>
 <span class="flex">
-<a href="/man/sessiond.1/" class="gdoc-nav__entry "> sessiond.1 </a>
+<a href="/man/sessiond-dbus.8/" class="gdoc-nav__entry "> sessiond-dbus.8 </a>
 </span>
 </li>
 </ul>
@@ -505,6 +510,10 @@ A list (of the format [&ldquo;item&rdquo;, &ldquo;item&rdquo;]) of input event t
 <li>
 <p><em>OffSec=</em></p>
 <p>DPMS off timeout in seconds to use while session is locked.</p>
+</li>
+<li>
+<p><em>MuteAudio=</em></p>
+<p>If &ldquo;true&rdquo;, mute the default audio sink while the session is locked. The mute state will be restored when unlocked.</p>
 </li>
 </ul>
 <div class="gdoc-page__anchorwrap">
