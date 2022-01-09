@@ -2,4 +2,6 @@ node_modules
 public
 resources
 
+themes/*/static/js/*.min.js
+
 .hugo_build.lock
