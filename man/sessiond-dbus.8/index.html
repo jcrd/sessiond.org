@@ -5,23 +5,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
-<meta name="description" content="Dependencies     meson &gt;= 0.47.0 [build] perl [build] glib &gt;= 2.52 [build] libx11 [build] libxi [build] libxext (optional, for DPMS support) [build] libwireplumber-0.4 (optional, for audio sink support) [build] python3-setuptools [build] python3 [runtime] dbus-python [runtime]  Ensure the above build dependencies are satisfied and configure the build with meson:
-meson builddir &amp;&amp; cd builddir Inside the build directory, meson configure will list all options set with -D. For example, to disable the DPMS feature, run:">
-<title>Building | sessiond</title>
+<meta name="description" content="NAME    sessiond-dbus - sessiond DBus service information
+SYNOPSIS    DBus service information.
+DESCRIPTION    sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
+Session interface    The /org/sessiond/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:
+METHODS      Lock
+Lock the session. Returns an error if the session is already locked.">
+<title>sessiond-dbus.8 | sessiond</title>
 <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<meta property="og:title" content="Building" />
-<meta property="og:description" content="Dependencies     meson &gt;= 0.47.0 [build] perl [build] glib &gt;= 2.52 [build] libx11 [build] libxi [build] libxext (optional, for DPMS support) [build] libwireplumber-0.4 (optional, for audio sink support) [build] python3-setuptools [build] python3 [runtime] dbus-python [runtime]  Ensure the above build dependencies are satisfied and configure the build with meson:
-meson builddir &amp;&amp; cd builddir Inside the build directory, meson configure will list all options set with -D. For example, to disable the DPMS feature, run:" />
+<meta property="og:title" content="sessiond-dbus.8" />
+<meta property="og:description" content="NAME    sessiond-dbus - sessiond DBus service information
+SYNOPSIS    DBus service information.
+DESCRIPTION    sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
+Session interface    The /org/sessiond/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:
+METHODS      Lock
+Lock the session. Returns an error if the session is already locked." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://sessiond.org/building/" />
-<meta property="article:section" content="" />
+<meta property="og:url" content="https://sessiond.org/man/sessiond-dbus.8/" />
+<meta property="article:section" content="man" />
 <meta property="article:modified_time" content="2022-01-09T15:00:07-07:00" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Building" />
-<meta name="twitter:description" content="Dependencies     meson &gt;= 0.47.0 [build] perl [build] glib &gt;= 2.52 [build] libx11 [build] libxi [build] libxext (optional, for DPMS support) [build] libwireplumber-0.4 (optional, for audio sink support) [build] python3-setuptools [build] python3 [runtime] dbus-python [runtime]  Ensure the above build dependencies are satisfied and configure the build with meson:
-meson builddir &amp;&amp; cd builddir Inside the build directory, meson configure will list all options set with -D. For example, to disable the DPMS feature, run:" />
+<meta name="twitter:title" content="sessiond-dbus.8" />
+<meta name="twitter:description" content="NAME    sessiond-dbus - sessiond DBus service information
+SYNOPSIS    DBus service information.
+DESCRIPTION    sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
+Session interface    The /org/sessiond/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:
+METHODS      Lock
+Lock the session. Returns an error if the session is already locked." />
 <script src="/js/darkmode-ce906ea916.min.js"></script>
 <link rel="preload" as="font" href="/fonts/Metropolis.woff2" type="font/woff2" crossorigin="anonymous">
 <link rel="preload" as="font" href="/fonts/LiberationSans.woff2" type="font/woff2" crossorigin="anonymous">
@@ -38,16 +50,16 @@ meson builddir &amp;&amp; cd builddir Inside the build directory, meson configur
 {
 "@context": "http://schema.org",
 "@type": "TechArticle",
-"articleSection": "",
-"name": "Building",
-"headline": "Building",
+"articleSection": "man",
+"name": "sessiond-dbus.8",
+"headline": "sessiond-dbus.8",
 "alternativeHeadline": "",
-"description": "Dependencies     meson \u0026gt;= 0.47.0 [build] perl [build] glib \u0026gt;= 2.52 [build] libx11 [build] libxi [build] libxext (optional, for DPMS support) [build] libwireplumber-0.4 (optional, for audio sink support) [build] python3-setuptools [build] python3 [runtime] dbus-python [runtime]  Ensure the above build dependencies are satisfied and configure the build with meson:\nmeson builddir \u0026amp;\u0026amp; cd builddir Inside the build directory, meson configure will list all options set with -D. For example, to disable the DPMS feature, run:",
+"description": "NAME    sessiond-dbus - sessiond DBus service information\nSYNOPSIS    DBus service information.\nDESCRIPTION    sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.\nSession interface    The \/org\/sessiond\/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:\nMETHODS      Lock\nLock the session. Returns an error if the session is already locked.",
 "inLanguage": "en",
 "isFamilyFriendly": "true",
 "mainEntityOfPage": {
 "@type": "WebPage",
-"@id": "https:\/\/sessiond.org\/building\/"
+"@id": "https:\/\/sessiond.org\/man\/sessiond-dbus.8\/"
 },
 "copyrightHolder": "sessiond",
 "copyrightYear": "0001",
@@ -65,8 +77,8 @@ meson builddir &amp;&amp; cd builddir Inside the build directory, meson configur
 "height": "32"
 }
 },
-"url": "https:\/\/sessiond.org\/building\/",
-"wordCount": "114",
+"url": "https:\/\/sessiond.org\/man\/sessiond-dbus.8\/",
+"wordCount": "857",
 "genre": []
 }
 </script>
@@ -318,7 +330,7 @@ meson builddir &amp;&amp; cd builddir Inside the build directory, meson configur
 </li>
 <li>
 <span class="flex">
-<a href="/building/" class="gdoc-nav__entry is-active"> Building </a>
+<a href="/building/" class="gdoc-nav__entry "> Building </a>
 </span>
 </li>
 <li>
@@ -353,7 +365,7 @@ meson builddir &amp;&amp; cd builddir Inside the build directory, meson configur
 </li>
 <li>
 <span class="flex">
-<a href="/man/sessiond-dbus.8/" class="gdoc-nav__entry "> sessiond-dbus.8 </a>
+<a href="/man/sessiond-dbus.8/" class="gdoc-nav__entry is-active"> sessiond-dbus.8 </a>
 </span>
 </li>
 </ul>
@@ -394,7 +406,7 @@ meson builddir &amp;&amp; cd builddir Inside the build directory, meson configur
 <div class="gdoc-page">
 <div class="gdoc-page__header flex flex-wrap
      justify-between 
-    
+     hidden-mobile 
     " itemprop="breadcrumb">
 <div>
 <svg class="icon gdoc_path hidden-mobile">
@@ -405,71 +417,448 @@ meson builddir &amp;&amp; cd builddir Inside the build directory, meson configur
 <meta itemprop='position' content='1' />
 </li>
 <li> / </li>
-<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Building</span>
+<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/man/' href='/man/'><span itemprop='name'>Manpages</span></a>
 <meta itemprop='position' content='2' />
+</li>
+<li> / </li>
+<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>sessiond-dbus.8</span>
+<meta itemprop='position' content='3' />
 </li>
 </ol>
 </div>
-<div>
-<span class="editpage">
-<svg class="icon gdoc_code">
-<use xlink:href="#gdoc_code"></use>
-</svg>
-<a href="https://github.com/jcrd/sessiond.org/edit/master/content/building.md"> Edit this page </a>
-</span>
-</div>
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
-<h1>Building</h1>
+<h1>sessiond-dbus.8</h1>
 <div class="gdoc-page__anchorwrap">
-<h2 id="dependencies"> Dependencies <a data-clipboard-text="https://sessiond.org/building/#dependencies" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Dependencies" href="#dependencies">
+<h1 id="name"> NAME <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#name" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor NAME" href="#name">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h1>
+</div>
+<p>sessiond-dbus - sessiond DBus service information</p>
+<div class="gdoc-page__anchorwrap">
+<h1 id="synopsis"> SYNOPSIS <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#synopsis" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SYNOPSIS" href="#synopsis">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h1>
+</div>
+<p>DBus service information.</p>
+<div class="gdoc-page__anchorwrap">
+<h1 id="description"> DESCRIPTION <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#description" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DESCRIPTION" href="#description">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h1>
+</div>
+<p>sessiond provides a DBus service on the session bus at the well-known name <em>org.sessiond.session1</em>.</p>
+<div class="gdoc-page__anchorwrap">
+<h2 id="session-interface"> Session interface <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#session-interface" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Session interface" href="#session-interface">
 <svg class="icon gdoc_link">
 <use xlink:href="#gdoc_link"></use>
 </svg>
 </a>
 </h2>
+</div>
+<p>The <strong>/org/sessiond/session1</strong> object implements the <strong>org.sessiond.session1.Session</strong> interface, which exposes the following methods, properties, and signals:</p>
+<div class="gdoc-page__anchorwrap">
+<h3 id="methods"> METHODS <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#methods" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor METHODS" href="#methods">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h3>
 </div>
 <ul>
-<li><a class="gdoc-markdown__link" href="https://mesonbuild.com">meson</a> &gt;= 0.47.0 [<em>build</em>]</li>
-<li>perl [<em>build</em>]</li>
-<li>glib &gt;= 2.52 [<em>build</em>]</li>
-<li>libx11 [<em>build</em>]</li>
-<li>libxi [<em>build</em>]</li>
-<li>libxext (optional, for DPMS support) [<em>build</em>]</li>
-<li>libwireplumber-0.4 (optional, for audio sink support) [<em>build</em>]</li>
-<li>python3-setuptools [<em>build</em>]</li>
-<li>python3 [<em>runtime</em>]</li>
-<li>dbus-python [<em>runtime</em>]</li>
+<li>
+<p><strong>Lock</strong></p>
+<p>Lock the session. Returns an error if the session is already locked.</p>
+</li>
+<li>
+<p><strong>Unlock</strong></p>
+<p>Unlock the session. Returns an error if the session is not locked.</p>
+</li>
+<li>
+<p><strong>Inhibit</strong></p>
+<p>Inhibit inactivity. The session will always be considered active if at least one inhibitor is running. Takes two arguments:</p>
+<ul>
+<li>
+<p><em>who</em></p>
+<p>A string describing who is inhibiting.</p>
+</li>
+<li>
+<p><em>why</em></p>
+<p>A string describing why the inhibitor is running.</p>
+</li>
 </ul>
-<p>Ensure the above build dependencies are satisfied and configure the build with <strong>meson</strong>:</p>
-<pre tabindex="0"><code>meson builddir &amp;&amp; cd builddir
-</code></pre>
-<p>Inside the build directory, <code>meson configure</code> will list all options set with <code>-D</code>. For example, to disable the DPMS feature, run:</p>
-<pre tabindex="0"><code>meson configure -Ddpms=disabled
-</code></pre>
-<p>Finally, run <code>ninja</code> to build sessiond.</p>
+<p>Returns a unique ID used to stop the inhibitor.</p>
+</li>
+<li>
+<p><strong>Uninhibit</strong></p>
+<p>Stop an inhibitor. Takes one argument:</p>
+<ul>
+<li>
+<p><em>id</em></p>
+<p>The unique ID of the inhibitor to stop.</p>
+</li>
+</ul>
+<p>Returns an error if the ID is not valid or does not exist.</p>
+</li>
+<li>
+<p><strong>StopInhibitors</strong></p>
+<p>Stop running inhibitors. Returns the number of inhibitors stopped.</p>
+</li>
+<li>
+<p><strong>ListInhibitors</strong></p>
+<p>List running inhibitors. Returns a dictionary mapping IDs to tuples of the creation timestamp and <em>who</em> and <em>why</em> strings.</p>
+</li>
+</ul>
 <div class="gdoc-page__anchorwrap">
-<h2 id="testing"> Testing <a data-clipboard-text="https://sessiond.org/building/#testing" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Testing" href="#testing">
+<h3 id="properties"> PROPERTIES <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#properties" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor PROPERTIES" href="#properties">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h3>
+</div>
+<ul>
+<li>
+<p><strong>InhibitedHint</strong></p>
+<p>The inhibited state of the session.</p>
+</li>
+<li>
+<p><strong>LockedHint</strong></p>
+<p>The locked state of the session.</p>
+</li>
+<li>
+<p><strong>IdleHint</strong></p>
+<p>The idle state of the session.</p>
+</li>
+<li>
+<p><strong>IdleSinceHint</strong></p>
+<p>The timestamp of the last change to <strong>IdleHint</strong>.</p>
+</li>
+<li>
+<p><strong>IdleSinceHintMonotonic</strong></p>
+<p>The timestamp of the last change to <strong>IdleHint</strong> in monotonic time.</p>
+</li>
+<li>
+<p><strong>Backlights</strong></p>
+<p>An array of object paths to exported Backlights.</p>
+</li>
+<li>
+<p><strong>AudioSinks</strong></p>
+<p>An array of object paths to exported AudioSinks.</p>
+</li>
+<li>
+<p><strong>DefaultAudioSink</strong></p>
+<p>Object path to the default AudioSink.</p>
+</li>
+<li>
+<p><strong>Version</strong></p>
+<p>The version of sessiond.</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h3 id="signals"> SIGNALS <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#signals" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SIGNALS" href="#signals">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h3>
+</div>
+<ul>
+<li>
+<p><strong>Lock</strong></p>
+<p>Emitted when the session is locked. <strong>LockedHint</strong> will be true.</p>
+</li>
+<li>
+<p><strong>Unlock</strong></p>
+<p>Emitted when the session is unlocked. <strong>LockedHint</strong> will be false.</p>
+</li>
+<li>
+<p><strong>Idle</strong></p>
+<p>Emitted when the session becomes idle. <strong>IdleHint</strong> will be true.</p>
+</li>
+<li>
+<p><strong>Active</strong></p>
+<p>Emitted when activity resumes in an inactive session. <strong>IdleHint</strong> will be false.</p>
+</li>
+<li>
+<p><strong>Inactive</strong> <strong>seconds</strong></p>
+<p>Emitted when the session becomes inactive, with the <strong>seconds</strong> argument being the number of seconds since activity. Its value will be equal to either the <em>IdleSec</em> or <em>DimSec</em> configuration option (see <a class="gdoc-markdown__link" href="https://sessiond.org/man/sessiond.conf.5/">sessiond.conf(5)</a>), or the <em>InactiveSec</em> option of a hook with an <strong>Inactive</strong> trigger (see <a class="gdoc-markdown__link" href="https://sessiond.org/man/sessiond-hooks.5/">sessiond-hooks(5)</a>).</p>
+</li>
+<li>
+<p><strong>PrepareForSleep</strong> <strong>state</strong></p>
+<p>Emitted before and after system sleep, with the <strong>state</strong> argument being true and false respectively.</p>
+</li>
+<li>
+<p><strong>PrepareForShutdown</strong> <strong>state</strong></p>
+<p>Emitted before and after system shutdown, with the <strong>state</strong> argument being true and false respectively.</p>
+</li>
+<li>
+<p><strong>AddBacklight</strong> <strong>path</strong></p>
+<p>Emitted when a backlight is added, with <strong>path</strong> being the object path of the new backlight.</p>
+</li>
+<li>
+<p><strong>RemoveBacklight</strong> <strong>path</strong></p>
+<p>Emitted when a backlight is removed, with <strong>path</strong> being the old object path of the backlight.</p>
+</li>
+<li>
+<p><strong>AddAudioSink</strong> <strong>path</strong></p>
+<p>Emitted when an audio sink is added, with <strong>path</strong> being the object path of the new audio sink.</p>
+</li>
+<li>
+<p><strong>RemoveAudioSink</strong> <strong>path</strong></p>
+<p>Emitted when an audio sink is removed, with <strong>path</strong> being the old object path of the audio sink.</p>
+</li>
+<li>
+<p><strong>ChangeDefaultAudioSink</strong> <strong>path</strong></p>
+<p>Emitted when the default audio sink changes, with <strong>path</strong> being the object path of the default audio sink.</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h2 id="backlight-interface"> Backlight interface <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#backlight-interface" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Backlight interface" href="#backlight-interface">
 <svg class="icon gdoc_link">
 <use xlink:href="#gdoc_link"></use>
 </svg>
 </a>
 </h2>
 </div>
-<p>Run tests with <code>meson test</code>.</p>
+<p>The <strong>/org/sessiond/session1/backlight/*</strong> objects implement the <strong>org.sessiond.session1.Backlight</strong> interface, which exposes the following methods and properties:</p>
 <div class="gdoc-page__anchorwrap">
-<h2 id="installing"> Installing <a data-clipboard-text="https://sessiond.org/building/#installing" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Installing" href="#installing">
+<h3 id="methods-1"> METHODS <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#methods-1" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor METHODS" href="#methods-1">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h3>
+</div>
+<ul>
+<li>
+<p><strong>SetBrightness</strong></p>
+<p>Set the brightness of the backlight. Takes one argument:</p>
+<ul>
+<li>
+<p><em>brightness</em></p>
+<p>An unsigned integer value.</p>
+</li>
+</ul>
+<p>Returns an error if unable to set brightness.</p>
+</li>
+<li>
+<p><strong>IncBrightness</strong></p>
+<p>Increment the brightness of the backlight. Takes one argument:</p>
+<ul>
+<li>
+<p><em>value</em></p>
+<p>An integer value added to the backlight&rsquo;s current brightness.</p>
+</li>
+</ul>
+<p>Returns the new brightness value or an error if unable to set brightness.</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h3 id="properties-1"> PROPERTIES <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#properties-1" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor PROPERTIES" href="#properties-1">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h3>
+</div>
+<ul>
+<li>
+<p><strong>Online</strong></p>
+<p>True if the backlight is online, false otherwise.</p>
+</li>
+<li>
+<p><strong>DevPath</strong></p>
+<p>Path to the backlight device without the sys mount point.</p>
+</li>
+<li>
+<p><strong>Name</strong></p>
+<p>Name of the backlight.</p>
+</li>
+<li>
+<p><strong>Subsystem</strong></p>
+<p>Subsystem to which the backlight belongs. Possible values are: &ldquo;backlight&rdquo; or &ldquo;leds&rdquo;.</p>
+</li>
+<li>
+<p><strong>SysPath</strong></p>
+<p>Path to the device via sys mount point. Format is: &ldquo;/sys/class/<em>Subsystem</em>/<em>Name</em>&rdquo;.</p>
+</li>
+<li>
+<p><strong>Brightness</strong></p>
+<p>Current brightness of backlight.</p>
+</li>
+<li>
+<p><strong>MaxBrightness</strong></p>
+<p>Max brightness of backlight.</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h2 id="audiosink-interface"> AudioSink interface <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#audiosink-interface" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AudioSink interface" href="#audiosink-interface">
 <svg class="icon gdoc_link">
 <use xlink:href="#gdoc_link"></use>
 </svg>
 </a>
 </h2>
 </div>
-<p>After building sessiond, <code>ninja install</code> can be used to install it.</p>
-<p>The <code>sessiond</code> Python package must also be installed. Run:</p>
-<pre tabindex="0"><code>cd python-sessiond
-python3 setup.py install
-</code></pre>
+<p>The <strong>/org/sessiond/session1/audiosink/*</strong> objects implement the <strong>org.sessiond.session1.AudioSink</strong> interface, which exposes the following methods, properties, and signals:</p>
+<div class="gdoc-page__anchorwrap">
+<h3 id="methods-2"> METHODS <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#methods-2" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor METHODS" href="#methods-2">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h3>
+</div>
+<ul>
+<li>
+<p><strong>SetVolume</strong></p>
+<p>Set the volume of the audio sink. Takes one argument:</p>
+<ul>
+<li>
+<p><em>volume</em></p>
+<p>A double value.</p>
+</li>
+</ul>
+<p>Returns an error if unable to set volume.</p>
+</li>
+<li>
+<p><strong>IncVolume</strong></p>
+<p>Increment the volume of the audio sink. Takes one argument:</p>
+<ul>
+<li>
+<p><em>value</em></p>
+<p>A double value added to the audio sink&rsquo;s current volume.</p>
+</li>
+</ul>
+<p>Returns the new volume value or an error if unable to set volume.</p>
+</li>
+<li>
+<p><strong>SetMute</strong></p>
+<p>Set the mute state of the audio sink. Takes one argument:</p>
+<ul>
+<li>
+<p><em>mute</em></p>
+<p>A boolean value indicating the mute state.</p>
+</li>
+</ul>
+<p>Returns an error if unable to set mute state.</p>
+</li>
+<li>
+<p><strong>ToggleMute</strong></p>
+<p>Toggle the mute state of the audio sink. Returns the new mute state or an error if unable to set mute state.</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h3 id="properties-2"> PROPERTIES <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#properties-2" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor PROPERTIES" href="#properties-2">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h3>
+</div>
+<ul>
+<li>
+<p><strong>Id</strong></p>
+<p>ID of the audio sink.</p>
+</li>
+<li>
+<p><strong>Name</strong></p>
+<p>Name of the audio sink.</p>
+</li>
+<li>
+<p><strong>Mute</strong></p>
+<p>Mute state of the audio sink.</p>
+</li>
+<li>
+<p><strong>Volume</strong></p>
+<p>Volume of the audio sink.</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h3 id="signals-1"> SIGNALS <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#signals-1" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SIGNALS" href="#signals-1">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h3>
+</div>
+<ul>
+<li>
+<p><strong>ChangeMute</strong> <strong>mute</strong></p>
+<p>Emitted when the mute state changes, with the <strong>mute</strong> argument being the new mute state.</p>
+</li>
+<li>
+<p><strong>ChangeVolume</strong> <strong>volume</strong></p>
+<p>Emitted when the volume changes, with the <strong>volume</strong> argument being the new volume value.</p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h1 id="introspection"> INTROSPECTION <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#introspection" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor INTROSPECTION" href="#introspection">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h1>
+</div>
+<ul>
+<li>
+<p>For complete introspection data, use <a class="gdoc-markdown__link" href="https://www.commandlinux.com/man-page/man1/gdbus.1.html">gdbus(1)</a>:</p>
+<p><strong>gdbus</strong> introspect &ndash;session &ndash;dest <em>org.sessiond.session1</em> &ndash;object-path <em>/org/sessiond/session1</em></p>
+</li>
+</ul>
+<div class="gdoc-page__anchorwrap">
+<h1 id="debugging"> DEBUGGING <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#debugging" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DEBUGGING" href="#debugging">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h1>
+</div>
+<p>Running sessiond with the environment variable <em>G_MESSAGES_DEBUG</em> set to &ldquo;all&rdquo; will print debug messages.</p>
+<div class="gdoc-page__anchorwrap">
+<h1 id="author"> AUTHOR <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#author" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AUTHOR" href="#author">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h1>
+</div>
+<p>James Reed <a class="gdoc-markdown__link" href="mailto:jcrd@sessiond.org">jcrd@sessiond.org</a></p>
+<div class="gdoc-page__anchorwrap">
+<h1 id="reporting-bugs"> REPORTING BUGS <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#reporting-bugs" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor REPORTING BUGS" href="#reporting-bugs">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h1>
+</div>
+<p>Bugs and issues can be reported here: <a class="gdoc-markdown__link" href="https://github.com/jcrd/sessiond/issues">https://github.com/jcrd/sessiond/issues</a></p>
+<div class="gdoc-page__anchorwrap">
+<h1 id="copyright"> COPYRIGHT <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#copyright" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor COPYRIGHT" href="#copyright">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h1>
+</div>
+<p>Copyright 2018-2020 James Reed. sessiond is licensed under the GNU General Public License v3.0 or later.</p>
+<div class="gdoc-page__anchorwrap">
+<h1 id="see-also"> SEE ALSO <a data-clipboard-text="https://sessiond.org/man/sessiond-dbus.8/#see-also" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SEE ALSO" href="#see-also">
+<svg class="icon gdoc_link">
+<use xlink:href="#gdoc_link"></use>
+</svg>
+</a>
+</h1>
+</div>
+<p><a class="gdoc-markdown__link" href="https://www.commandlinux.com/man-page/man1/gdbus.1.html">gdbus(1)</a>, <a class="gdoc-markdown__link" href="https://www.commandlinux.com/man-page/man8/systemd-logind.service.8.html">systemd-logind.service(8)</a></p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>

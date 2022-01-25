@@ -2,12 +2,14 @@
 <html lang="en" class="color-toggle-hidden">
 
 <head>
-<meta name="generator" content="Hugo 0.91.2" />
+<meta name="generator" content="Hugo 0.92.0" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
-<meta name="description" content="sessiond is a standalone X session manager that reports the idle status of a graphical session to systemd-logind. It can be used alongside a window manager or desktop environment that does not provide its own session management.
-Features     automatic screen locking on session idle and before sleeping automatic backlight dimming on session idle systemd targets activated by systemd-logind&rsquo;s lock, unlock, sleep, and shutdown signals hooks triggered by inactivity or signals a DBus service (optional) management of DPMS settings  Get started   ">
+<meta name="description" content="sessiond is a daemon for systemd-based Linux systems that interfaces with systemd-logind to provide session management features to X11 window managers.
+Its primary responsibility is to monitor keyboard and mouse activity to determine when a session has become idle, and to then act accordingly.
+It also provides a DBus service with interfaces to backlights and audio sinks.
+Features     automatic screen locking on session idle and before sleeping automatic backlight dimming on session idle automatic muting of audio while session is locked systemd targets activated by systemd-logind&rsquo;s lock, unlock, sleep, and shutdown signals hooks triggered by inactivity or signals a DBus service  backlight interaction audio sink interaction   (optional) management of DPMS settings  Get started   ">
 <title>sessiond</title>
 <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -298,6 +300,11 @@ Features     automatic screen locking on session idle and before sleeping automa
 <ul class="gdoc-nav__list">
 <li>
 <span class="flex">
+<a href="/man/sessiond.1/" class="gdoc-nav__entry "> sessiond.1 </a>
+</span>
+</li>
+<li>
+<span class="flex">
 <a href="/man/sessionctl.1/" class="gdoc-nav__entry "> sessionctl.1 </a>
 </span>
 </li>
@@ -318,7 +325,7 @@ Features     automatic screen locking on session idle and before sleeping automa
 </li>
 <li>
 <span class="flex">
-<a href="/man/sessiond.1/" class="gdoc-nav__entry "> sessiond.1 </a>
+<a href="/man/sessiond-dbus.8/" class="gdoc-nav__entry "> sessiond-dbus.8 </a>
 </span>
 </li>
 </ul>
@@ -382,7 +389,9 @@ Features     automatic screen locking on session idle and before sleeping automa
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>Overview</h1>
-<p>sessiond is a standalone X session manager that reports the idle status of a graphical session to <strong>systemd-logind</strong>. It can be used alongside a window manager or desktop environment that does not provide its own session management.</p>
+<p>sessiond is a daemon for <strong>systemd</strong>-based Linux systems that interfaces with <strong>systemd-logind</strong> to provide session management features to X11 window managers.</p>
+<p>Its primary responsibility is to monitor keyboard and mouse activity to determine when a session has become idle, and to then act accordingly.</p>
+<p>It also provides a DBus service with interfaces to backlights and audio sinks.</p>
 <div class="gdoc-page__anchorwrap">
 <h2 id="features"> Features <a data-clipboard-text="https://sessiond.org/#features" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Features" href="#features">
 <svg class="icon gdoc_link">
@@ -394,9 +403,14 @@ Features     automatic screen locking on session idle and before sleeping automa
 <ul>
 <li>automatic screen locking on session idle and before sleeping</li>
 <li>automatic backlight dimming on session idle</li>
+<li>automatic muting of audio while session is locked</li>
 <li>systemd targets activated by systemd-logind&rsquo;s lock, unlock, sleep, and shutdown signals</li>
 <li>hooks triggered by inactivity or signals</li>
-<li>a DBus service</li>
+<li>a DBus service <ul>
+<li>backlight interaction</li>
+<li>audio sink interaction</li>
+</ul>
+</li>
 <li>(optional) management of DPMS settings</li>
 </ul>
 <span class="gdoc-button gdoc-button--large">

@@ -21,7 +21,7 @@ OPTIONS      -h, &ndash;help" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sessiond.org/man/sessiond.1/" />
 <meta property="article:section" content="man" />
-<meta property="article:modified_time" content="2021-04-08T15:52:34-06:00" />
+<meta property="article:modified_time" content="2022-01-09T15:00:07-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="sessiond.1" />
 <meta name="twitter:description" content="NAME    sessiond - standalone X session manager
@@ -59,7 +59,7 @@ OPTIONS      -h, &ndash;help" />
 "copyrightYear": "0001",
 "dateCreated": "0001-01-01T00:00:00.00Z",
 "datePublished": "0001-01-01T00:00:00.00Z",
-"dateModified": "2021-04-08T15:52:34.00Z",
+"dateModified": "2022-01-09T15:00:07.00Z",
 "publisher": {
 "@type": "Organization",
 "name": "sessiond",
@@ -72,7 +72,7 @@ OPTIONS      -h, &ndash;help" />
 }
 },
 "url": "https:\/\/sessiond.org\/man\/sessiond.1\/",
-"wordCount": "675",
+"wordCount": "127",
 "genre": []
 }
 </script>
@@ -334,6 +334,11 @@ OPTIONS      -h, &ndash;help" />
 <ul class="gdoc-nav__list">
 <li>
 <span class="flex">
+<a href="/man/sessiond.1/" class="gdoc-nav__entry is-active"> sessiond.1 </a>
+</span>
+</li>
+<li>
+<span class="flex">
 <a href="/man/sessionctl.1/" class="gdoc-nav__entry "> sessionctl.1 </a>
 </span>
 </li>
@@ -354,7 +359,7 @@ OPTIONS      -h, &ndash;help" />
 </li>
 <li>
 <span class="flex">
-<a href="/man/sessiond.1/" class="gdoc-nav__entry is-active"> sessiond.1 </a>
+<a href="/man/sessiond-dbus.8/" class="gdoc-nav__entry "> sessiond-dbus.8 </a>
 </span>
 </li>
 </ul>
@@ -472,262 +477,6 @@ OPTIONS      -h, &ndash;help" />
 </li>
 </ul>
 <div class="gdoc-page__anchorwrap">
-<h1 id="dbus-service"> DBUS SERVICE <a data-clipboard-text="https://sessiond.org/man/sessiond.1/#dbus-service" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DBUS SERVICE" href="#dbus-service">
-<svg class="icon gdoc_link">
-<use xlink:href="#gdoc_link"></use>
-</svg>
-</a>
-</h1>
-</div>
-<p>sessiond provides a DBus service on the session bus at the well-known name <em>org.sessiond.session1</em>.</p>
-<div class="gdoc-page__anchorwrap">
-<h2 id="session-interface"> Session interface <a data-clipboard-text="https://sessiond.org/man/sessiond.1/#session-interface" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Session interface" href="#session-interface">
-<svg class="icon gdoc_link">
-<use xlink:href="#gdoc_link"></use>
-</svg>
-</a>
-</h2>
-</div>
-<p>The <strong>/org/sessiond/session1</strong> object implements the <strong>org.sessiond.session1.Session</strong> interface, which exposes the following methods, properties, and signals:</p>
-<div class="gdoc-page__anchorwrap">
-<h3 id="methods"> METHODS <a data-clipboard-text="https://sessiond.org/man/sessiond.1/#methods" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor METHODS" href="#methods">
-<svg class="icon gdoc_link">
-<use xlink:href="#gdoc_link"></use>
-</svg>
-</a>
-</h3>
-</div>
-<ul>
-<li>
-<p><strong>Lock</strong></p>
-<p>Lock the session. Returns an error if the session is already locked.</p>
-</li>
-<li>
-<p><strong>Unlock</strong></p>
-<p>Unlock the session. Returns an error if the session is not locked.</p>
-</li>
-<li>
-<p><strong>Inhibit</strong></p>
-<p>Inhibit inactivity. The session will always be considered active if at least one inhibitor is running. Takes two arguments:</p>
-<ul>
-<li>
-<p><em>who</em></p>
-<p>A string describing who is inhibiting.</p>
-</li>
-<li>
-<p><em>why</em></p>
-<p>A string describing why the inhibitor is running.</p>
-</li>
-</ul>
-<p>Returns a unique ID used to stop the inhibitor.</p>
-</li>
-<li>
-<p><strong>Uninhibit</strong></p>
-<p>Stop an inhibitor. Takes one argument:</p>
-<ul>
-<li>
-<p><em>id</em></p>
-<p>The unique ID of the inhibitor to stop.</p>
-</li>
-</ul>
-<p>Returns an error if the ID is not valid or does not exist.</p>
-</li>
-<li>
-<p><strong>StopInhibitors</strong></p>
-<p>Stop running inhibitors. Returns the number of inhibitors stopped.</p>
-</li>
-<li>
-<p><strong>ListInhibitors</strong></p>
-<p>List running inhibitors. Returns a dictionary mapping IDs to tuples of the creation timestamp and <em>who</em> and <em>why</em> strings.</p>
-</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-<h3 id="properties"> PROPERTIES <a data-clipboard-text="https://sessiond.org/man/sessiond.1/#properties" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor PROPERTIES" href="#properties">
-<svg class="icon gdoc_link">
-<use xlink:href="#gdoc_link"></use>
-</svg>
-</a>
-</h3>
-</div>
-<ul>
-<li>
-<p><strong>InhibitedHint</strong></p>
-<p>The inhibited state of the session.</p>
-</li>
-<li>
-<p><strong>LockedHint</strong></p>
-<p>The locked state of the session.</p>
-</li>
-<li>
-<p><strong>IdleHint</strong></p>
-<p>The idle state of the session.</p>
-</li>
-<li>
-<p><strong>IdleSinceHint</strong></p>
-<p>The timestamp of the last change to <strong>IdleHint</strong>.</p>
-</li>
-<li>
-<p><strong>IdleSinceHintMonotonic</strong></p>
-<p>The timestamp of the last change to <strong>IdleHint</strong> in monotonic time.</p>
-</li>
-<li>
-<p><strong>Backlights</strong></p>
-<p>An array of object paths to exported Backlights.</p>
-</li>
-<li>
-<p><strong>Version</strong></p>
-<p>The version of sessiond.</p>
-</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-<h3 id="signals"> SIGNALS <a data-clipboard-text="https://sessiond.org/man/sessiond.1/#signals" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor SIGNALS" href="#signals">
-<svg class="icon gdoc_link">
-<use xlink:href="#gdoc_link"></use>
-</svg>
-</a>
-</h3>
-</div>
-<ul>
-<li>
-<p><strong>Lock</strong></p>
-<p>Emitted when the session is locked. <strong>LockedHint</strong> will be true.</p>
-</li>
-<li>
-<p><strong>Unlock</strong></p>
-<p>Emitted when the session is unlocked. <strong>LockedHint</strong> will be false.</p>
-</li>
-<li>
-<p><strong>Idle</strong></p>
-<p>Emitted when the session becomes idle. <strong>IdleHint</strong> will be true.</p>
-</li>
-<li>
-<p><strong>Active</strong></p>
-<p>Emitted when activity resumes in an inactive session. <strong>IdleHint</strong> will be false.</p>
-</li>
-<li>
-<p><strong>Inactive</strong> <strong>seconds</strong></p>
-<p>Emitted when the session becomes inactive, with the <strong>seconds</strong> argument being the number of seconds since activity. Its value will be equal to either the <em>IdleSec</em> or <em>DimSec</em> configuration option (see <a class="gdoc-markdown__link" href="https://sessiond.org/man/sessiond.conf.5/">sessiond.conf(5)</a>), or the <em>InactiveSec</em> option of a hook with an <strong>Inactive</strong> trigger (see <a class="gdoc-markdown__link" href="https://sessiond.org/man/sessiond-hooks.5/">sessiond-hooks(5)</a>).</p>
-</li>
-<li>
-<p><strong>PrepareForSleep</strong> <strong>state</strong></p>
-<p>Emitted before and after system sleep, with the <strong>state</strong> argument being true and false respectively.</p>
-</li>
-<li>
-<p><strong>PrepareForShutdown</strong> <strong>state</strong></p>
-<p>Emitted before and after system shutdown, with the <strong>state</strong> argument being true and false respectively.</p>
-</li>
-<li>
-<p><strong>AddBacklight</strong> <strong>path</strong></p>
-<p>Emitted when a backlight is added, with <strong>path</strong> being the object path of the new backlight.</p>
-</li>
-<li>
-<p><strong>RemoveBacklight</strong> <strong>path</strong></p>
-<p>Emitted when a backlight is removed, with <strong>path</strong> being the old object path of the backlight.</p>
-</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-<h2 id="backlight-interface"> Backlight interface <a data-clipboard-text="https://sessiond.org/man/sessiond.1/#backlight-interface" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Backlight interface" href="#backlight-interface">
-<svg class="icon gdoc_link">
-<use xlink:href="#gdoc_link"></use>
-</svg>
-</a>
-</h2>
-</div>
-<p>The <strong>/org/sessiond/session1/backlight/*</strong> objects implement the <strong>org.sessiond.session1.Backlight</strong> interface, which exposes the following methods and properties:</p>
-<div class="gdoc-page__anchorwrap">
-<h3 id="methods-1"> METHODS <a data-clipboard-text="https://sessiond.org/man/sessiond.1/#methods-1" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor METHODS" href="#methods-1">
-<svg class="icon gdoc_link">
-<use xlink:href="#gdoc_link"></use>
-</svg>
-</a>
-</h3>
-</div>
-<ul>
-<li>
-<p><strong>SetBrightness</strong></p>
-<p>Set the brightness of the backlight. Takes one argument:</p>
-<ul>
-<li>
-<p><em>brightness</em></p>
-<p>An unsigned integer value.</p>
-</li>
-</ul>
-<p>Returns an error if unable to set brightness.</p>
-</li>
-<li>
-<p><strong>IncBrightness</strong></p>
-<p>Increment the brightness of the backlight. Takes one argument:</p>
-<ul>
-<li>
-<p><em>value</em></p>
-<p>An integer value added to the backlight&rsquo;s current brightness.</p>
-</li>
-</ul>
-<p>Returns the new brightness value or an error if unable to set brightness.</p>
-</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-<h3 id="properties-1"> PROPERTIES <a data-clipboard-text="https://sessiond.org/man/sessiond.1/#properties-1" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor PROPERTIES" href="#properties-1">
-<svg class="icon gdoc_link">
-<use xlink:href="#gdoc_link"></use>
-</svg>
-</a>
-</h3>
-</div>
-<ul>
-<li>
-<p><strong>Online</strong></p>
-<p>True if the backlight is online, false otherwise.</p>
-</li>
-<li>
-<p><strong>DevPath</strong></p>
-<p>Path to the backlight device without the sys mount point.</p>
-</li>
-<li>
-<p><strong>Name</strong></p>
-<p>Name of the backlight.</p>
-</li>
-<li>
-<p><strong>Subsystem</strong></p>
-<p>Subsystem to which the backlight belongs. Possible values are: &ldquo;backlight&rdquo; or &ldquo;leds&rdquo;.</p>
-</li>
-<li>
-<p><strong>SysPath</strong></p>
-<p>Path to the device via sys mount point. Format is: &ldquo;/sys/class/<em>Subsystem</em>/<em>Name</em>&rdquo;.</p>
-</li>
-<li>
-<p><strong>Brightness</strong></p>
-<p>Current brightness of backlight.</p>
-</li>
-<li>
-<p><strong>MaxBrightness</strong></p>
-<p>Max brightness of backlight.</p>
-</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-<h2 id="introspection"> Introspection <a data-clipboard-text="https://sessiond.org/man/sessiond.1/#introspection" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Introspection" href="#introspection">
-<svg class="icon gdoc_link">
-<use xlink:href="#gdoc_link"></use>
-</svg>
-</a>
-</h2>
-</div>
-<ul>
-<li>
-<p>For complete introspection data, use <a class="gdoc-markdown__link" href="https://www.commandlinux.com/man-page/man1/gdbus.1.html">gdbus(1)</a>:</p>
-<p><strong>gdbus</strong> introspect &ndash;session &ndash;dest <em>org.sessiond.session1</em> &ndash;object-path <em>/org/sessiond/session1</em></p>
-</li>
-</ul>
-<div class="gdoc-page__anchorwrap">
-<h1 id="debugging"> DEBUGGING <a data-clipboard-text="https://sessiond.org/man/sessiond.1/#debugging" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor DEBUGGING" href="#debugging">
-<svg class="icon gdoc_link">
-<use xlink:href="#gdoc_link"></use>
-</svg>
-</a>
-</h1>
-</div>
-<p>Running sessiond with the environment variable <em>G_MESSAGES_DEBUG</em> set to &ldquo;all&rdquo; will print debug messages.</p>
-<div class="gdoc-page__anchorwrap">
 <h1 id="author"> AUTHOR <a data-clipboard-text="https://sessiond.org/man/sessiond.1/#author" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor AUTHOR" href="#author">
 <svg class="icon gdoc_link">
 <use xlink:href="#gdoc_link"></use>
@@ -762,7 +511,7 @@ OPTIONS      -h, &ndash;help" />
 </a>
 </h1>
 </div>
-<p><a class="gdoc-markdown__link" href="https://sessiond.org/man/sessiond.conf.5/">sessiond.conf(5)</a>, <a class="gdoc-markdown__link" href="https://sessiond.org/man/sessiond-hooks.5/">sessiond-hooks(5)</a>, <a class="gdoc-markdown__link" href="https://www.commandlinux.com/man-page/man8/systemd-logind.service.8.html">systemd-logind.service(8)</a>, <a class="gdoc-markdown__link" href="https://www.commandlinux.com/man-page/man1/gdbus.1.html">gdbus(1)</a></p>
+<p><a class="gdoc-markdown__link" href="https://sessiond.org/man/sessiond.conf.5/">sessiond.conf(5)</a>, <a class="gdoc-markdown__link" href="https://sessiond.org/man/sessiond-hooks.5/">sessiond-hooks(5)</a>, <a class="gdoc-markdown__link" href="https://sessiond.org/man/sessiond-dbus.8/">sessiond-dbus(8)</a>, <a class="gdoc-markdown__link" href="https://www.commandlinux.com/man-page/man8/systemd-logind.service.8.html">systemd-logind.service(8)</a></p>
 </article>
 <div class="gdoc-page__footer flex flex-wrap justify-between">
 </div>
