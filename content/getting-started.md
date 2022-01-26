@@ -27,7 +27,7 @@ See [Building](/building/#dependencies) for a complete list of dependencies.
 
 1. Download and extract the latest release, then enter the created directory:
 ```
-curl -L https://github.com/jcrd/sessiond/archive/refs/tags/v0.6.0.tar.gz | tar -xz -C sessiond
+curl -L https://github.com/jcrd/sessiond/archive/refs/tags/v0.6.1.tar.gz | tar -xz -C sessiond
 cd sessiond
 ```
 
