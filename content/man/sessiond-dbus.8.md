@@ -305,11 +305,6 @@ methods, properties, and signals:
     **gdbus** introspect --session --dest _org.sessiond.session1_ --object-path
     _/org/sessiond/session1_
 
-# DEBUGGING
-
-Running sessiond with the environment variable _G\_MESSAGES\_DEBUG_ set to "all"
-will print debug messages.
-
 # AUTHOR
 
 James Reed <jcrd@sessiond.org>

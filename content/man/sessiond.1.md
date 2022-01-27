@@ -36,6 +36,11 @@ settings.
 
     Show version.
 
+# DEBUGGING
+
+Running sessiond with the environment variable _G\_MESSAGES\_DEBUG_ set to "all"
+will print debug messages.
+
 # AUTHOR
 
 James Reed <jcrd@sessiond.org>
