@@ -10,6 +10,11 @@ more:
     external: true
     icon: "gdoc_download"
 
+  - name: Support this project
+    ref: "https://ko-fi.com/twiddlingbits"
+    external: true
+    icon: "gdoc_heart"
+
   - name: website source
     ref: "https://github.com/jcrd/sessiond.org"
     external: true
