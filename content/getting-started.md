@@ -1,6 +1,5 @@
 ---
 title: Getting started
-geekdocEditPath: "edit/master/content"
 ---
 
 ## Installation

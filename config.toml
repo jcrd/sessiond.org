@@ -19,7 +19,8 @@ endLevel = 4
 geekdocLogo = "favicon/favicon.ico"
 geekdocMenuBundle = true
 geekdocNextPrev = false
-geekdocRepo="https://github.com/jcrd/sessiond.org"
+geekdocSearch = false
+geekdocBreadcrumb = false
 
 [minify]
 disableHTML = true

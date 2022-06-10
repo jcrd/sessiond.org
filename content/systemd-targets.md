@@ -1,6 +1,5 @@
 ---
 title: systemd targets
-geekdocEditPath: "edit/master/content"
 ---
 
 sessiond provides the following systemd targets:

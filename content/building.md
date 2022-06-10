@@ -1,6 +1,5 @@
 ---
 title: Building
-geekdocEditPath: "edit/master/content"
 ---
 
 ## Dependencies

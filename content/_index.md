@@ -1,6 +1,5 @@
 ---
 title: Overview
-geekdocEditPath: "edit/master/content"
 ---
 
 sessiond is a daemon for **systemd**-based Linux systems that interfaces with

@@ -1,6 +1,5 @@
 ---
 title: Configuration
-geekdocEditPath: "edit/master/content"
 ---
 
 sessiond looks for a configuration file at
