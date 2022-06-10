@@ -6,34 +6,31 @@
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light dark" />
-<meta name="generator" content="Hugo 0.98.0" />
-<meta name="description" content="Installation     Packages  If a package is available for your distro, install it using the instructions below:
-  RPM package available from copr. 
-Install with:
-dnf copr enable jcrd/sessiond dnf install sessiond    From source  Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
- Download and extract the latest release, then enter the created directory:  curl -L https://github." />
+<meta name="generator" content="Hugo 0.100.2" />
+<meta name="description" content="Installation Packages If a package is available for your distro, install it using the instructions below:
+RPM package available from copr. Install with:
+dnf copr enable jcrd/sessiond dnf install sessiond From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
+Download and extract the latest release, then enter the created directory: curl -L https://github.com/jcrd/sessiond/archive/refs/tags/v0.6.1.tar.gz | tar -xz -C sessiond cd sessiond Initiate the build process with meson and ninja: meson builddir ninja -C builddir Install the built package: sudo ninja -C builddir install Install the Python package: cd python-sessiond sudo python3 setup." />
 <title>Getting started | sessiond</title>
 <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
 <meta property="og:title" content="Getting started" />
 <meta property="og:site_name" content="sessiond" />
-<meta property="og:description" content="Installation     Packages  If a package is available for your distro, install it using the instructions below:
-  RPM package available from copr. 
-Install with:
-dnf copr enable jcrd/sessiond dnf install sessiond    From source  Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
- Download and extract the latest release, then enter the created directory:  curl -L https://github." />
+<meta property="og:description" content="Installation Packages If a package is available for your distro, install it using the instructions below:
+RPM package available from copr. Install with:
+dnf copr enable jcrd/sessiond dnf install sessiond From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
+Download and extract the latest release, then enter the created directory: curl -L https://github.com/jcrd/sessiond/archive/refs/tags/v0.6.1.tar.gz | tar -xz -C sessiond cd sessiond Initiate the build process with meson and ninja: meson builddir ninja -C builddir Install the built package: sudo ninja -C builddir install Install the Python package: cd python-sessiond sudo python3 setup." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sessiond.org/getting-started/" />
 <meta property="article:section" content="" />
-<meta property="article:modified_time" content="2022-01-26T16:53:52-07:00" />
+<meta property="article:modified_time" content="2022-06-09T23:32:56-06:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Getting started" />
-<meta name="twitter:description" content="Installation     Packages  If a package is available for your distro, install it using the instructions below:
-  RPM package available from copr. 
-Install with:
-dnf copr enable jcrd/sessiond dnf install sessiond    From source  Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
- Download and extract the latest release, then enter the created directory:  curl -L https://github." />
+<meta name="twitter:description" content="Installation Packages If a package is available for your distro, install it using the instructions below:
+RPM package available from copr. Install with:
+dnf copr enable jcrd/sessiond dnf install sessiond From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
+Download and extract the latest release, then enter the created directory: curl -L https://github.com/jcrd/sessiond/archive/refs/tags/v0.6.1.tar.gz | tar -xz -C sessiond cd sessiond Initiate the build process with meson and ninja: meson builddir ninja -C builddir Install the built package: sudo ninja -C builddir install Install the Python package: cd python-sessiond sudo python3 setup." />
 <script type="application/ld+json">
 {
 "@context": "http://schema.org",
@@ -42,7 +39,7 @@ dnf copr enable jcrd/sessiond dnf install sessiond    From source  Follow the in
 "name": "Getting started",
 "url": "https://sessiond.org/getting-started/",
 "headline": "Getting started",
-"description": "Installation     Packages  If a package is available for your distro, install it using the instructions below:\n  RPM package available from copr. \nInstall with:\ndnf copr enable jcrd\/sessiond dnf install sessiond    From source  Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.\n Download and extract the latest release, then enter the created directory:  curl -L https:\/\/github.",
+"description": "Installation Packages If a package is available for your distro, install it using the instructions below:\nRPM package available from copr. Install with:\ndnf copr enable jcrd\/sessiond dnf install sessiond From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.\nDownload and extract the latest release, then enter the created directory: curl -L https:\/\/github.com\/jcrd\/sessiond\/archive\/refs\/tags\/v0.6.1.tar.gz | tar -xz -C sessiond cd sessiond Initiate the build process with meson and ninja: meson builddir ninja -C builddir Install the built package: sudo ninja -C builddir install Install the Python package: cd python-sessiond sudo python3 setup.",
 "wordCount": "156",
 "inLanguage": "en",
 "isFamilyFriendly": "true",
@@ -54,7 +51,7 @@ dnf copr enable jcrd/sessiond dnf install sessiond    From source  Follow the in
 "copyrightYear": "0001",
 "dateCreated": "0001-01-01T00:00:00.00Z",
 "datePublished": "0001-01-01T00:00:00.00Z",
-"dateModified": "2022-01-26T16:53:52.00Z",
+"dateModified": "2022-06-09T23:32:56.00Z",
 "publisher": {
 "@type": "Organization",
 "name": "sessiond",
@@ -246,14 +243,6 @@ dnf copr enable jcrd/sessiond dnf install sessiond    From source  Follow the in
 <main class="container flex flex-even">
 <aside class="gdoc-nav">
 <nav>
-<div class="gdoc-search flex align-center">
-<svg class="gdoc-icon gdoc_search">
-<use xlink:href="#gdoc_search"></use>
-</svg>
-<input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search" aria-label="Search" maxlength="64" data-site-base-url="https://sessiond.org/" data-site-lang="en" />
-<div class="gdoc-search__spinner spinner hidden"></div>
-<ul id="gdoc-search-results" class="gdoc-search__list"></ul>
-</div>
 <section class="gdoc-nav--main">
 <h2>Navigation</h2>
 <ul class="gdoc-nav__list">
@@ -481,32 +470,10 @@ dnf copr enable jcrd/sessiond dnf install sessiond    From source  Follow the in
 <div class="gdoc-page">
 <div class="gdoc-page__header flex flex-wrap
   
-    justify-between
+    justify-end
   
-  
-  " itemprop="breadcrumb">
-<div>
-<svg class="gdoc-icon gdoc_path hidden-mobile">
-<use xlink:href="#gdoc_path"></use>
-</svg>
-<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Overview</span></a>
-<meta itemprop='position' content='1' />
-</li>
-<li> / </li>
-<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Getting started</span>
-<meta itemprop='position' content='2' />
-</li>
-</ol>
-</div>
-<div>
-<span class="editpage">
-<svg class="gdoc-icon gdoc_code">
-<use xlink:href="#gdoc_code"></use>
-</svg>
-<a href="https://github.com/jcrd/sessiond.org/edit/master/content/content/getting-started.md"> Edit page </a>
-</span>
-</div>
+  hidden-mobile
+  hidden" itemprop="breadcrumb">
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>Getting started</h1>
@@ -611,7 +578,6 @@ sudo python3 setup.py install
 </nav>
 </footer>
 </div>
-<script defer src="/js/search-1c4cfb2d.bundle.min.js"></script>
 </body>
 
 </html>
