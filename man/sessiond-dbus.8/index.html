@@ -6,37 +6,43 @@
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light dark" />
-<meta name="generator" content="Hugo 0.98.0" />
-<meta name="description" content="NAME     sessiond-dbus - sessiond DBus service information
-SYNOPSIS     DBus service information.
-DESCRIPTION     sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
-Session interface     The /org/sessiond/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:
-METHODS       Lock
-Lock the session. Returns an error if the session is already locked." />
+<meta name="generator" content="Hugo 0.100.2" />
+<meta name="description" content="NAME sessiond-dbus - sessiond DBus service information
+SYNOPSIS DBus service information.
+DESCRIPTION sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
+Session interface The /org/sessiond/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:
+METHODS Lock
+Lock the session. Returns an error if the session is already locked.
+Unlock
+Unlock the session. Returns an error if the session is not locked." />
 <title>sessiond-dbus.8 | sessiond</title>
 <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
 <meta property="og:title" content="sessiond-dbus.8" />
 <meta property="og:site_name" content="sessiond" />
-<meta property="og:description" content="NAME     sessiond-dbus - sessiond DBus service information
-SYNOPSIS     DBus service information.
-DESCRIPTION     sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
-Session interface     The /org/sessiond/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:
-METHODS       Lock
-Lock the session. Returns an error if the session is already locked." />
+<meta property="og:description" content="NAME sessiond-dbus - sessiond DBus service information
+SYNOPSIS DBus service information.
+DESCRIPTION sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
+Session interface The /org/sessiond/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:
+METHODS Lock
+Lock the session. Returns an error if the session is already locked.
+Unlock
+Unlock the session. Returns an error if the session is not locked." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sessiond.org/man/sessiond-dbus.8/" />
 <meta property="article:section" content="Man" />
 <meta property="article:modified_time" content="2022-01-26T17:08:00-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="sessiond-dbus.8" />
-<meta name="twitter:description" content="NAME     sessiond-dbus - sessiond DBus service information
-SYNOPSIS     DBus service information.
-DESCRIPTION     sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
-Session interface     The /org/sessiond/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:
-METHODS       Lock
-Lock the session. Returns an error if the session is already locked." />
+<meta name="twitter:description" content="NAME sessiond-dbus - sessiond DBus service information
+SYNOPSIS DBus service information.
+DESCRIPTION sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.
+Session interface The /org/sessiond/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:
+METHODS Lock
+Lock the session. Returns an error if the session is already locked.
+Unlock
+Unlock the session. Returns an error if the session is not locked." />
 <script type="application/ld+json">
 {
 "@context": "http://schema.org",
@@ -45,7 +51,7 @@ Lock the session. Returns an error if the session is already locked." />
 "name": "sessiond-dbus.8",
 "url": "https://sessiond.org/man/sessiond-dbus.8/",
 "headline": "sessiond-dbus.8",
-"description": "NAME     sessiond-dbus - sessiond DBus service information\nSYNOPSIS     DBus service information.\nDESCRIPTION     sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.\nSession interface     The \/org\/sessiond\/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:\nMETHODS       Lock\nLock the session. Returns an error if the session is already locked.",
+"description": "NAME sessiond-dbus - sessiond DBus service information\nSYNOPSIS DBus service information.\nDESCRIPTION sessiond provides a DBus service on the session bus at the well-known name org.sessiond.session1.\nSession interface The \/org\/sessiond\/session1 object implements the org.sessiond.session1.Session interface, which exposes the following methods, properties, and signals:\nMETHODS Lock\nLock the session. Returns an error if the session is already locked.\nUnlock\nUnlock the session. Returns an error if the session is not locked.",
 "wordCount": "842",
 "inLanguage": "en",
 "isFamilyFriendly": "true",
@@ -249,14 +255,6 @@ Lock the session. Returns an error if the session is already locked." />
 <main class="container flex flex-even">
 <aside class="gdoc-nav">
 <nav>
-<div class="gdoc-search flex align-center">
-<svg class="gdoc-icon gdoc_search">
-<use xlink:href="#gdoc_search"></use>
-</svg>
-<input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search" aria-label="Search" maxlength="64" data-site-base-url="https://sessiond.org/" data-site-lang="en" />
-<div class="gdoc-search__spinner spinner hidden"></div>
-<ul id="gdoc-search-results" class="gdoc-search__list"></ul>
-</div>
 <section class="gdoc-nav--main">
 <h2>Navigation</h2>
 <ul class="gdoc-nav__list">
@@ -484,28 +482,10 @@ Lock the session. Returns an error if the session is already locked." />
 <div class="gdoc-page">
 <div class="gdoc-page__header flex flex-wrap
   
-    justify-between
+    justify-end
   
   hidden-mobile
-  " itemprop="breadcrumb">
-<div>
-<svg class="gdoc-icon gdoc_path hidden-mobile">
-<use xlink:href="#gdoc_path"></use>
-</svg>
-<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Overview</span></a>
-<meta itemprop='position' content='1' />
-</li>
-<li> / </li>
-<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/man/' href='/man/'><span itemprop='name'>Manpages</span></a>
-<meta itemprop='position' content='2' />
-</li>
-<li> / </li>
-<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>sessiond-dbus.8</span>
-<meta itemprop='position' content='3' />
-</li>
-</ol>
-</div>
+  hidden" itemprop="breadcrumb">
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>sessiond-dbus.8</h1>
@@ -958,7 +938,6 @@ Lock the session. Returns an error if the session is already locked." />
 </nav>
 </footer>
 </div>
-<script defer src="/js/search-1c4cfb2d.bundle.min.js"></script>
 </body>
 
 </html>

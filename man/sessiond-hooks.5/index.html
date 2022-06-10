@@ -6,25 +6,28 @@
 <meta name="referrer" content="no-referrer" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light dark" />
-<meta name="generator" content="Hugo 0.98.0" />
-<meta name="description" content="NAME     sessiond-hooks - sessiond hook file format
-SYNOPSIS      [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&lt;seconds&gt; (Inactive only) ExecStart=&lt;command&gt; ExecStop=&lt;command&gt; (Lock|Idle|Inactive only)  DESCRIPTION     sessiond provides the ability to define hooks that are triggered by events. The &ldquo;Inactive&rdquo; event is unique to hooks. It allows commands to be run after a period of inactivity. It is more general than the &ldquo;Idle&rdquo; event, which occurs after IdleSec (see sessiond." />
+<meta name="generator" content="Hugo 0.100.2" />
+<meta name="description" content="NAME sessiond-hooks - sessiond hook file format
+SYNOPSIS [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&lt;seconds&gt; (Inactive only) ExecStart=&lt;command&gt; ExecStop=&lt;command&gt; (Lock|Idle|Inactive only) DESCRIPTION sessiond provides the ability to define hooks that are triggered by events. The &ldquo;Inactive&rdquo; event is unique to hooks. It allows commands to be run after a period of inactivity. It is more general than the &ldquo;Idle&rdquo; event, which occurs after IdleSec (see sessiond.conf(5)) seconds of inactivity.
+Hooks can be specified in the configuration file using the section &ldquo;[[Hook]]&rdquo;." />
 <title>sessiond-hooks.5 | sessiond</title>
 <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
 <meta property="og:title" content="sessiond-hooks.5" />
 <meta property="og:site_name" content="sessiond" />
-<meta property="og:description" content="NAME     sessiond-hooks - sessiond hook file format
-SYNOPSIS      [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&lt;seconds&gt; (Inactive only) ExecStart=&lt;command&gt; ExecStop=&lt;command&gt; (Lock|Idle|Inactive only)  DESCRIPTION     sessiond provides the ability to define hooks that are triggered by events. The “Inactive” event is unique to hooks. It allows commands to be run after a period of inactivity. It is more general than the “Idle” event, which occurs after IdleSec (see sessiond." />
+<meta property="og:description" content="NAME sessiond-hooks - sessiond hook file format
+SYNOPSIS [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&lt;seconds&gt; (Inactive only) ExecStart=&lt;command&gt; ExecStop=&lt;command&gt; (Lock|Idle|Inactive only) DESCRIPTION sessiond provides the ability to define hooks that are triggered by events. The “Inactive” event is unique to hooks. It allows commands to be run after a period of inactivity. It is more general than the “Idle” event, which occurs after IdleSec (see sessiond.conf(5)) seconds of inactivity.
+Hooks can be specified in the configuration file using the section “[[Hook]]”." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sessiond.org/man/sessiond-hooks.5/" />
 <meta property="article:section" content="Man" />
 <meta property="article:modified_time" content="2021-02-23T08:50:01-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="sessiond-hooks.5" />
-<meta name="twitter:description" content="NAME     sessiond-hooks - sessiond hook file format
-SYNOPSIS      [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&lt;seconds&gt; (Inactive only) ExecStart=&lt;command&gt; ExecStop=&lt;command&gt; (Lock|Idle|Inactive only)  DESCRIPTION     sessiond provides the ability to define hooks that are triggered by events. The “Inactive” event is unique to hooks. It allows commands to be run after a period of inactivity. It is more general than the “Idle” event, which occurs after IdleSec (see sessiond." />
+<meta name="twitter:description" content="NAME sessiond-hooks - sessiond hook file format
+SYNOPSIS [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&lt;seconds&gt; (Inactive only) ExecStart=&lt;command&gt; ExecStop=&lt;command&gt; (Lock|Idle|Inactive only) DESCRIPTION sessiond provides the ability to define hooks that are triggered by events. The “Inactive” event is unique to hooks. It allows commands to be run after a period of inactivity. It is more general than the “Idle” event, which occurs after IdleSec (see sessiond.conf(5)) seconds of inactivity.
+Hooks can be specified in the configuration file using the section “[[Hook]]”." />
 <script type="application/ld+json">
 {
 "@context": "http://schema.org",
@@ -33,7 +36,7 @@ SYNOPSIS      [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&lt;s
 "name": "sessiond-hooks.5",
 "url": "https://sessiond.org/man/sessiond-hooks.5/",
 "headline": "sessiond-hooks.5",
-"description": "NAME     sessiond-hooks - sessiond hook file format\nSYNOPSIS      [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=\u003cseconds\u003e (Inactive only) ExecStart=\u003ccommand\u003e ExecStop=\u003ccommand\u003e (Lock|Idle|Inactive only)  DESCRIPTION     sessiond provides the ability to define hooks that are triggered by events. The “Inactive” event is unique to hooks. It allows commands to be run after a period of inactivity. It is more general than the “Idle” event, which occurs after IdleSec (see sessiond.",
+"description": "NAME sessiond-hooks - sessiond hook file format\nSYNOPSIS [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=\u003cseconds\u003e (Inactive only) ExecStart=\u003ccommand\u003e ExecStop=\u003ccommand\u003e (Lock|Idle|Inactive only) DESCRIPTION sessiond provides the ability to define hooks that are triggered by events. The “Inactive” event is unique to hooks. It allows commands to be run after a period of inactivity. It is more general than the “Idle” event, which occurs after IdleSec (see sessiond.conf(5)) seconds of inactivity.\nHooks can be specified in the configuration file using the section “[[Hook]]”.",
 "wordCount": "157",
 "inLanguage": "en",
 "isFamilyFriendly": "true",
@@ -237,14 +240,6 @@ SYNOPSIS      [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&lt;s
 <main class="container flex flex-even">
 <aside class="gdoc-nav">
 <nav>
-<div class="gdoc-search flex align-center">
-<svg class="gdoc-icon gdoc_search">
-<use xlink:href="#gdoc_search"></use>
-</svg>
-<input type="text" id="gdoc-search-input" class="gdoc-search__input" placeholder="Search" aria-label="Search" maxlength="64" data-site-base-url="https://sessiond.org/" data-site-lang="en" />
-<div class="gdoc-search__spinner spinner hidden"></div>
-<ul id="gdoc-search-results" class="gdoc-search__list"></ul>
-</div>
 <section class="gdoc-nav--main">
 <h2>Navigation</h2>
 <ul class="gdoc-nav__list">
@@ -472,28 +467,10 @@ SYNOPSIS      [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&lt;s
 <div class="gdoc-page">
 <div class="gdoc-page__header flex flex-wrap
   
-    justify-between
+    justify-end
   
   hidden-mobile
-  " itemprop="breadcrumb">
-<div>
-<svg class="gdoc-icon gdoc_path hidden-mobile">
-<use xlink:href="#gdoc_path"></use>
-</svg>
-<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/' href='/'><span itemprop='name'>Overview</span></a>
-<meta itemprop='position' content='1' />
-</li>
-<li> / </li>
-<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/man/' href='/man/'><span itemprop='name'>Manpages</span></a>
-<meta itemprop='position' content='2' />
-</li>
-<li> / </li>
-<li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>sessiond-hooks.5</span>
-<meta itemprop='position' content='3' />
-</li>
-</ol>
-</div>
+  hidden" itemprop="breadcrumb">
 </div>
 <article class="gdoc-markdown gdoc-markdown__align--left">
 <h1>sessiond-hooks.5</h1>
@@ -595,7 +572,6 @@ SYNOPSIS      [Hook] Trigger=Lock|Idle|Sleep|Shutdown|Inactive InactiveSec=&lt;s
 </nav>
 </footer>
 </div>
-<script defer src="/js/search-1c4cfb2d.bundle.min.js"></script>
 </body>
 
 </html>
