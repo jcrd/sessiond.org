@@ -7,17 +7,23 @@ main:
     ref: "/usage.md"
     sub:
       - name: Starting the session
-        ref: "/usage.md#starting-the-session"
+        ref: "/usage.md"
+        anchor: "starting-the-session"
       - name: Running a window manager
-        ref: "/usage.md#running-a-window-manager"
+        ref: "/usage.md"
+        anchor: "running-a-window-manager"
       - name: Running services
-        ref: "/usage.md#running-services"
+        ref: "/usage.md"
+        anchor: "running-services"
       - name: Manually stopping the session
-        ref: "/usage.md#manually-stopping-the-session"
+        ref: "/usage.md"
+        anchor: "manually-stopping-the-session"
       - name: Locking the session
-        ref: "/usage.md#locking-the-session"
+        ref: "/usage.md"
+        anchor: "locking-the-session"
       - name: Inhibiting inactivity
-        ref: "/usage.md#inhibiting-inactivity"
+        ref: "/usage.md"
+        anchor: "inhibiting-inactivity"
 
   - name: Configuration
     ref: "/configuration.md"
