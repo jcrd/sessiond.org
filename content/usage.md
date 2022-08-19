@@ -16,12 +16,14 @@ For example, configure `lightdm` to start a sessiond session by setting
 
 To use sessiond alongside a window manager, the window manager service must
 include:
+
 ```
 [Install]
 Alias=window-manager.service
 ```
 
 An example `twm.service`:
+
 ```
 [Unit]
 Description=Window manager
@@ -66,7 +68,10 @@ so the service is started when the session begins.
 
 It can then be enabled with `systemctl --user enable <service>`.
 
+Example services can be found [here][services].
+
 [1]: https://www.freedesktop.org/software/systemd/man/systemd.special.html#graphical-session.target
+[services]: <https://gist.github.com/jcrd/c53a8446f1483b355606ed27299919cb>
 
 ## Manually stopping the session
 

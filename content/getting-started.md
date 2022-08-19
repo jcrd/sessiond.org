@@ -12,6 +12,7 @@ If a package is available for your distro, install it using the instructions bel
 * **RPM** package available from [copr][1]. [![Copr build status](https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/package/sessiond/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/package/sessiond/)
 
   Install with:
+
   ```
   dnf copr enable jcrd/sessiond
   dnf install sessiond
@@ -25,27 +26,32 @@ Follow the instructions below to build sessiond from source.
 See [Building](/building/#dependencies) for a complete list of dependencies.
 
 1. Download and extract the latest release, then enter the created directory:
+
 ```
 curl -L https://github.com/jcrd/sessiond/archive/refs/tags/v0.6.1.tar.gz | tar -xz -C sessiond
 cd sessiond
 ```
 
 2. Initiate the build process with `meson` and `ninja`:
+
 ```
 meson builddir
 ninja -C builddir
 ```
 
 3. Install the built package:
+
 ```
 sudo ninja -C builddir install
 ```
 
 4. Install the Python package:
+
 ```
 cd python-sessiond
 sudo python3 setup.py install
 ```
+
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -59,8 +65,8 @@ Refer to [dovetail.service][dovetail] for a working example of integrating a win
 Examples of services for use in a sessiond session can be found [here][services].
 
 [usage]: {{< ref "/usage.md" >}}
-[dovetail]: https://github.com/jcrd/dovetail/blob/master/systemd/dovetail.service
-[services]: https://github.com/jcrd/configs/tree/master/systemd/user
+[dovetail]: <https://github.com/jcrd/dovetail/blob/master/systemd/dovetail.service>
+[services]: <https://gist.github.com/jcrd/c53a8446f1483b355606ed27299919cb>
 
 ## Configuration
 
