@@ -22,7 +22,7 @@ Running a window manager To use sessiond alongside a window manager, the window 
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sessiond.org/usage/" />
 <meta property="article:section" content="" />
-<meta property="article:modified_time" content="2022-06-09T23:32:56-06:00" />
+<meta property="article:modified_time" content="2022-08-18T20:17:14-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Usage" />
 <meta name="twitter:description" content="Starting the session Running a window manager Running services Manually stopping the session Locking the session Inhibiting inactivity Starting the session A sessiond-based session should be started via a display manager, using the provided sessiond session desktop entry.
@@ -37,7 +37,7 @@ Running a window manager To use sessiond alongside a window manager, the window 
 "url": "https://sessiond.org/usage/",
 "headline": "Usage",
 "description": "Starting the session Running a window manager Running services Manually stopping the session Locking the session Inhibiting inactivity Starting the session A sessiond-based session should be started via a display manager, using the provided sessiond session desktop entry.\nFor example, configure lightdm to start a sessiond session by setting user-session=sessiond in \/etc\/lightdm\/lightdm.conf.\nRunning a window manager To use sessiond alongside a window manager, the window manager service must include:",
-"wordCount": "475",
+"wordCount": "481",
 "inLanguage": "en",
 "isFamilyFriendly": "true",
 "mainEntityOfPage": {
@@ -48,7 +48,7 @@ Running a window manager To use sessiond alongside a window manager, the window 
 "copyrightYear": "0001",
 "dateCreated": "0001-01-01T00:00:00.00Z",
 "datePublished": "0001-01-01T00:00:00.00Z",
-"dateModified": "2022-06-09T23:32:56.00Z",
+"dateModified": "2022-08-18T20:17:14.00Z",
 "publisher": {
 "@type": "Organization",
 "name": "sessiond",
@@ -551,6 +551,7 @@ WantedBy=graphical-session.target
 </code></pre>
 <p>so the service is started when the session begins.</p>
 <p>It can then be enabled with <code>systemctl --user enable &lt;service&gt;</code>.</p>
+<p>Example services can be found <a class="gdoc-markdown__link" href="https://gist.github.com/jcrd/c53a8446f1483b355606ed27299919cb">here</a>.</p>
 <div class="gdoc-page__anchorwrap">
 <h2 id="manually-stopping-the-session"> Manually stopping the session <a data-clipboard-text="https://sessiond.org/usage/#manually-stopping-the-session" class="gdoc-page__anchor clip flex align-center" title="Anchor to: Manually stopping the session" aria-label="Anchor to: Manually stopping the session" href="#manually-stopping-the-session">
 <svg class="gdoc-icon gdoc_link">
