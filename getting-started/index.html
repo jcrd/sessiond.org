@@ -8,8 +8,9 @@
 <meta name="color-scheme" content="light dark" />
 <meta name="generator" content="Hugo 0.101.0" />
 <meta name="description" content="Installation Packages If a package is available for your distro, install it using the instructions below:
-RPM package available from copr. Install with:
-dnf copr enable jcrd/sessiond dnf install sessiond From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
+Fedora (copr)
+dnf copr enable jcrd/sessiond dnf install sessiond Arch Linux (AUR)
+git clone https://aur.archlinux.org/sessiond.git cd sessiond makepkg -si From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
 Download and extract the latest release, then enter the created directory: curl -L https://github.com/jcrd/sessiond/archive/refs/tags/v0.6.1.tar.gz | tar -xz -C sessiond cd sessiond Initiate the build process with meson and ninja: meson builddir ninja -C builddir Install the built package: sudo ninja -C builddir install Install the Python package: cd python-sessiond sudo python3 setup." />
 <title>Getting started | sessiond</title>
 <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
@@ -18,18 +19,20 @@ Download and extract the latest release, then enter the created directory: curl 
 <meta property="og:title" content="Getting started" />
 <meta property="og:site_name" content="sessiond" />
 <meta property="og:description" content="Installation Packages If a package is available for your distro, install it using the instructions below:
-RPM package available from copr. Install with:
-dnf copr enable jcrd/sessiond dnf install sessiond From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
+Fedora (copr)
+dnf copr enable jcrd/sessiond dnf install sessiond Arch Linux (AUR)
+git clone https://aur.archlinux.org/sessiond.git cd sessiond makepkg -si From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
 Download and extract the latest release, then enter the created directory: curl -L https://github.com/jcrd/sessiond/archive/refs/tags/v0.6.1.tar.gz | tar -xz -C sessiond cd sessiond Initiate the build process with meson and ninja: meson builddir ninja -C builddir Install the built package: sudo ninja -C builddir install Install the Python package: cd python-sessiond sudo python3 setup." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://sessiond.org/getting-started/" />
 <meta property="article:section" content="" />
-<meta property="article:modified_time" content="2022-08-18T20:17:14-04:00" />
+<meta property="article:modified_time" content="2022-08-22T09:52:27-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Getting started" />
 <meta name="twitter:description" content="Installation Packages If a package is available for your distro, install it using the instructions below:
-RPM package available from copr. Install with:
-dnf copr enable jcrd/sessiond dnf install sessiond From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
+Fedora (copr)
+dnf copr enable jcrd/sessiond dnf install sessiond Arch Linux (AUR)
+git clone https://aur.archlinux.org/sessiond.git cd sessiond makepkg -si From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.
 Download and extract the latest release, then enter the created directory: curl -L https://github.com/jcrd/sessiond/archive/refs/tags/v0.6.1.tar.gz | tar -xz -C sessiond cd sessiond Initiate the build process with meson and ninja: meson builddir ninja -C builddir Install the built package: sudo ninja -C builddir install Install the Python package: cd python-sessiond sudo python3 setup." />
 <script type="application/ld+json">
 {
@@ -39,8 +42,8 @@ Download and extract the latest release, then enter the created directory: curl 
 "name": "Getting started",
 "url": "https://sessiond.org/getting-started/",
 "headline": "Getting started",
-"description": "Installation Packages If a package is available for your distro, install it using the instructions below:\nRPM package available from copr. Install with:\ndnf copr enable jcrd\/sessiond dnf install sessiond From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.\nDownload and extract the latest release, then enter the created directory: curl -L https:\/\/github.com\/jcrd\/sessiond\/archive\/refs\/tags\/v0.6.1.tar.gz | tar -xz -C sessiond cd sessiond Initiate the build process with meson and ninja: meson builddir ninja -C builddir Install the built package: sudo ninja -C builddir install Install the Python package: cd python-sessiond sudo python3 setup.",
-"wordCount": "156",
+"description": "Installation Packages If a package is available for your distro, install it using the instructions below:\nFedora (copr)\ndnf copr enable jcrd\/sessiond dnf install sessiond Arch Linux (AUR)\ngit clone https:\/\/aur.archlinux.org\/sessiond.git cd sessiond makepkg -si From source Follow the instructions below to build sessiond from source. See Building for a complete list of dependencies.\nDownload and extract the latest release, then enter the created directory: curl -L https:\/\/github.com\/jcrd\/sessiond\/archive\/refs\/tags\/v0.6.1.tar.gz | tar -xz -C sessiond cd sessiond Initiate the build process with meson and ninja: meson builddir ninja -C builddir Install the built package: sudo ninja -C builddir install Install the Python package: cd python-sessiond sudo python3 setup.",
+"wordCount": "161",
 "inLanguage": "en",
 "isFamilyFriendly": "true",
 "mainEntityOfPage": {
@@ -51,7 +54,7 @@ Download and extract the latest release, then enter the created directory: curl 
 "copyrightYear": "0001",
 "dateCreated": "0001-01-01T00:00:00.00Z",
 "datePublished": "0001-01-01T00:00:00.00Z",
-"dateModified": "2022-08-18T20:17:14.00Z",
+"dateModified": "2022-08-22T09:52:27.00Z",
 "publisher": {
 "@type": "Organization",
 "name": "sessiond",
@@ -500,10 +503,16 @@ Download and extract the latest release, then enter the created directory: curl 
 <p>If a package is available for your distro, install it using the instructions below:</p>
 <ul>
 <li>
-<p><strong>RPM</strong> package available from <a class="gdoc-markdown__link" href="https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/">copr</a>. <a class="gdoc-markdown__link--raw" href="https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/package/sessiond/"><img src="https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/package/sessiond/status_image/last_build.png" alt="Copr build status" /></a></p>
-<p>Install with:</p>
+<p>Fedora (<a class="gdoc-markdown__link" href="https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/">copr</a>)</p>
 <pre tabindex="0"><code>dnf copr enable jcrd/sessiond
 dnf install sessiond
+</code></pre>
+</li>
+<li>
+<p>Arch Linux (<a class="gdoc-markdown__link" href="https://aur.archlinux.org/packages/sessiond">AUR</a>)</p>
+<pre tabindex="0"><code>git clone https://aur.archlinux.org/sessiond.git
+cd sessiond
+makepkg -si
 </code></pre>
 </li>
 </ul>
