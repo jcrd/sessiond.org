@@ -9,16 +9,23 @@ title: Getting started
 {{< tab "Packages" >}}
 If a package is available for your distro, install it using the instructions below:
 
-* **RPM** package available from [copr][1]. [![Copr build status](https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/package/sessiond/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/package/sessiond/)
-
-  Install with:
+* Fedora ([copr][copr])
 
   ```
   dnf copr enable jcrd/sessiond
   dnf install sessiond
   ```
 
-[1]: https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/
+* Arch Linux ([AUR][aur])
+
+  ```
+  git clone https://aur.archlinux.org/sessiond.git
+  cd sessiond
+  makepkg -si
+  ```
+
+[copr]: https://copr.fedorainfracloud.org/coprs/jcrd/sessiond/
+[aur]: https://aur.archlinux.org/packages/sessiond
 {{< /tab >}}
 
 {{< tab "From source" >}}
