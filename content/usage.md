@@ -151,8 +151,7 @@ optional arguments:
 
 See [sessiond-inhibit(1)][2] for more information.
 
-See the _DBus Service_ section of [sessiond(1)][3]
-for descriptions of inhibitor-related methods.
+See [sessiond-dbus(8)][3] for descriptions of inhibitor-related methods.
 
 [2]: {{< ref "/man/sessiond-inhibit.1.md" >}}
-[3]: {{< ref "/man/sessiond.1.md#dbus-service" >}}
+[3]: {{< ref "/man/sessiond-dbus.8.md" >}}
